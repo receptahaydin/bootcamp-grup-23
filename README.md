@@ -46,58 +46,36 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
   - [App Screenshots](#app-screenshots)
 
 <details>
-    <summary><h3>Sprint 1 - App Screenshots</h3></summary>
+    <summary><h3>Sprint 1 - Ekran Görüntüleri</h3></summary>
   <table style="width: 100%;">
     <tr>
-      <td colspan="4" style="text-align: center;"><h2>Authentication pages</h2></td>
+      <td colspan="4" style="text-align: center;"><h2>Giriş Ekranı</h2></td>
     </tr>
     <tr>
-      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/7ccc9628-3943-4961-a4ae-382d3c0f47cb" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/7ccc9628-3943-4961-a4ae-382d3c0f47cb" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/12.png" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/63547928-be01-42a8-8468-3181436709fb" style="max-width: 100%; height: auto;"></td>
     </tr>
     <tr>
-      <td colspan="4" style="text-align: center;"><h2>Homepage and Location pages</h2></td>
+      <td colspan="4" style="text-align: center;"><h2>Yeni Gezi Oluşturma</h2></td>
     </tr>
     <tr>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/20.png" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/21.png" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/22.png" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/0c421aeb-a20f-42b9-a21a-d83af0f358f3" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/86358230-966f-4709-bbdc-8c7614c2b6a8" style="max-width: 100%; height: auto;"></td>
     </tr>
     <tr>
-      <td colspan="4" style="text-align: center;"><h2>Add Product pages</h2></td>
+      <td colspan="4" style="text-align: center;"><h2>Yapay Zeka Çıktıları</h2></td>
     </tr>
     <tr>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/30.png" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/31.png" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/32.png" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/33.png" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/3226a9db-1568-4ebc-bb1e-d1fb96959afe" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/77157c3d-9cb8-45dc-9af5-e34d31779928" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/e6397e76-8a33-4565-9ae7-f12fe5fbdb4b" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/514cd3f1-005e-4c31-85b5-630098a70941" style="max-width: 100%; height: auto;"></td>
     </tr>
     <tr>
-      <td colspan="4" style="text-align: center;"><h2>Offers pages</h2></td>
+      <td colspan="4" style="text-align: center;"><h2>Oluşturulan Geziler</h2></td>
     </tr>
     <tr>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/40.png" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/41.png" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/42.png" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/43.png" style="max-width: 100%; height: auto;"></td>
-    </tr>
-    <tr>
-      <td colspan="4" style="text-align: center;"><h2>Profile and Settings pages</h2></td>
-    </tr>
-    <tr>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/50.png" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/51.png" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/52.png" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/53.png" style="max-width: 100%; height: auto;"></td>
-    </tr>
-    <tr>
-      <td colspan="4" style="text-align: center;"><h2>Rent Product pages</h2></td>
-    </tr>
-    <tr>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/60.png" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/61.png" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/62.png" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/7eb85374-a710-4723-9db8-2ef3f41b0775" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/485e575d-0fcf-41d5-95fa-bc4c5595ed5a" style="max-width: 100%; height: auto;"></td>
     </tr>
   </table>
   </details>   
