@@ -5,7 +5,41 @@ Flutter 23
 
 # Ürün İle İlgili Bilgiler
 
-## Takım Üyeleri
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #dddddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            border-radius: 50%;
+        }
+        a {
+            margin: 0 5px;
+        }
+    </style>
+    <title>Team Members</title>
+</head>
+<body>
+
+<h2>Takım Üyeleri</h2>
 
 <table>
   <tr>
@@ -14,7 +48,7 @@ Flutter 23
     <th>Sosyal Medya</th>
   </tr>
   <tr>
-    <td align="center"><img src="https://media.licdn.com/dms/image/D4D03AQHZNwGJOLKBrw/profile-displayphoto-shrink_200_200/0/1712146944360?e=1726099200&v=beta&t=vwZ6rLzcSZioqSJlI8cWA1nZvGUDCcoyjM7odAseN-c" width="50"/> Melike Yiğenoğlu</td>
+    <td align="center"><img src="https://media.licdn.com/dms/image/D4D03AQHZNwGJOLKBrw/profile-displayphoto-shrink_200_200/0/1712146944360?e=1726099200&v=beta&t=vwZ6rLzcSZioqSJlI8cWA1nZvGUDCcoyjM7odAseN-c" width="50"/><br>Melike Yiğenoğlu</td>
     <td align="center">Scrum Master</td>
     <td align="center">
       <a href="https://github.com/melekom">
@@ -26,7 +60,7 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td align="center"><img src="https://media.licdn.com/dms/image/D4D03AQE2L5nXfeBWxw/profile-displayphoto-shrink_200_200/0/1698991099785?e=1726099200&v=beta&t=IqvruaIKBkgByj6v34CuNMtgoMBBURQnx6KZd09zYIg" width="50"/> Oğuzhan Gençaslan</td>
+    <td align="center"><img src="https://media.licdn.com/dms/image/D4D03AQE2L5nXfeBWxw/profile-displayphoto-shrink_200_200/0/1698991099785?e=1726099200&v=beta&t=IqvruaIKBkgByj6v34CuNMtgoMBBURQnx6KZd09zYIg" width="50"/><br>Oğuzhan Gençaslan</td>
     <td align="center">Product Owner</td>
     <td align="center">
       <a href="https://github.com/oguzhangencaslan">
@@ -38,7 +72,7 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td align="center"><img src="https://media.licdn.com/dms/image/D4D03AQHaFnGXzHT9GQ/profile-displayphoto-shrink_200_200/0/1709732130539?e=1726099200&v=beta&t=duxxk0xlKL8xemPsaTOqu1yOehh2Uafg8YtfT8bjAy0" width="50"/> Muhammed Talha Peri</td>
+    <td align="center"><img src="https://media.licdn.com/dms/image/D4D03AQHaFnGXzHT9GQ/profile-displayphoto-shrink_200_200/0/1709732130539?e=1726099200&v=beta&t=duxxk0xlKL8xemPsaTOqu1yOehh2Uafg8YtfT8bjAy0" width="50"/><br>Muhammed Talha Peri</td>
     <td align="center">Developer</td>
     <td align="center">
       <a href="https://github.com/talhaperi1903">
@@ -50,7 +84,7 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td align="center"><img src="https://media.licdn.com/dms/image/D4D03AQE5FIkLdrtpLQ/profile-displayphoto-shrink_200_200/0/1699274020569?e=1726099200&v=beta&t=n5PXzqHotaLn_LW3adapPOGnUq69nMZe4m15anwYX4c" width="50"/> Recep Taha Aydın</td>
+    <td align="center"><img src="https://media.licdn.com/dms/image/D4D03AQE5FIkLdrtpLQ/profile-displayphoto-shrink_200_200/0/1699274020569?e=1726099200&v=beta&t=n5PXzqHotaLn_LW3adapPOGnUq69nMZe4m15anwYX4c" width="50"/><br>Recep Taha Aydın</td>
     <td align="center">Developer</td>
     <td align="center">
       <a href="https://github.com/receptahaydin">
@@ -62,7 +96,7 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td align="center"><img src="https://avatars.githubusercontent.com/u/6?v=4" width="50"/> Naime Yöndem</td>
+    <td align="center"><img src="https://avatars.githubusercontent.com/u/6?v=4" width="50"/><br>Naime Yöndem</td>
     <td align="center">Developer</td>
     <td align="center">
       <a href="https://github.com/naimeyondem">
@@ -74,7 +108,7 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td align="center"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/49415597/a9eb8802-083b-49ff-b858-67a2a0dc8b14" width="50"/> Bavul</td>
+    <td align="center"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/49415597/a9eb8802-083b-49ff-b858-67a2a0dc8b14" width="50"/><br>Bavul</td>
     <td align="center">Startup</td>
     <td align="center">
       <a href="https://github.com/receptahaydin/bootcamp-grup-23">
@@ -83,6 +117,9 @@ Flutter 23
     </td>
   </tr>
 </table>
+
+</body>
+</html>
 
 
 
