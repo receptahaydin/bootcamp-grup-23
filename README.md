@@ -50,6 +50,10 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
 
 - Daily Scrum: Toplantı kararları Whatsapp üzerinden alındı, ancak Daily Scrum toplantılarının Discord üzerinden yapılmasına karar verildi. Daily Scrum toplantısı örneği jpeg veya word formatında Readme'de paylaşılmıştır.
 
+## Toplantı Ekran Görüntüleri
+
+![Ekran_Goruntusu_154](https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/210dbf3e-8e06-42c3-b065-b8d2cadf6cd3)
+
 <details>
     <summary><h3>Sprint 1 - Ekran Görüntüleri</h3></summary>
   <table style="width: 100%;">
