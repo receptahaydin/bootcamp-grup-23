@@ -74,7 +74,7 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/41f05ca4-8877-4270-9d49-7077eab71329" width="50"/> Bavul</td>
+    <td><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/41f05ca4-8877-4270-9d49-7077eab71329" width="150"/> Bavul</td>
     <td>Startup</td>
     <td>
       <a href="https://github.com/receptahaydin/bootcamp-grup-23">
