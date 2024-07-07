@@ -7,7 +7,7 @@ Flutter 23
 
 ## Takım Üyeleri
 - **Melike Yiğenoğlu** - Scrum Master
-- **Talha Peri** - Developer
+- ** Muhammed Talha Peri** - Developer
 - **Recep Taha Aydın** - Developer
 - **Oğuzhan Gençaslan** - Product Owner
 - **Naime Yöndem** - UI/UX Designer
