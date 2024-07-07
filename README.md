@@ -36,14 +36,11 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
 - Seyahat Blog Yazarları ve Influencer'lar
 - Erasmus ve Değişim Programı Öğrencileri
 - Doğa Yürüyüşü ve Kamp Yapan Bireyler
-- 
+
 ## Product Backlog URL
 [Bavul Trello Board]([https://www.example.com](https://trello.com/invite/b/vB6Uyr6D/ATTI6561550ffa27ebcd4c1f4cde5efea2cb2A922FB1/oua-23))
 
-## Table of Contents
-
-- [Sprint 1](#sprint-1)
-  - [App Screenshots](#app-screenshots)
+# Sprint 1
 
 <details>
     <summary><h3>Sprint 1 - Ekran Görüntüleri</h3></summary>
