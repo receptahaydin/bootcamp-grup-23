@@ -78,7 +78,4 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
   </details>
 
 ## Intro
-<video width="320" height="240" controls>
-  <source src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/75dd3484-8ece-47a1-8896-9ddcfc698a9c/video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qIaWozjDyPk?si=iTPr3wV22mf-JRP5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
