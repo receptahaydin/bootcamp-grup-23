@@ -49,10 +49,6 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
       <td colspan="4" style="text-align: center;"><h2>Intro ve Giriş Ekranı</h2></td>
     </tr>
     <tr>
-        <video width="320" height="240" controls>
-  <source src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/75dd3484-8ece-47a1-8896-9ddcfc698a9c/video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
       <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/63547928-be01-42a8-8468-3181436709fb" style="max-width: 100%; height: auto;"></td>
     </tr>
     <tr>
@@ -79,4 +75,10 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
       <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/485e575d-0fcf-41d5-95fa-bc4c5595ed5a" style="max-width: 100%; height: auto;"></td>
     </tr>
   </table>
-  </details>   
+  </details>
+
+## Intro
+<video width="320" height="240" controls>
+  <source src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/75dd3484-8ece-47a1-8896-9ddcfc698a9c/video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
