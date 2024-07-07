@@ -6,11 +6,84 @@ Flutter 23
 # Ürün İle İlgili Bilgiler
 
 ## Takım Üyeleri
-- **Melike Yiğenoğlu** - Scrum Master
-- **Muhammed Talha Peri** - Developer
-- **Recep Taha Aydın** - Developer
-- **Oğuzhan Gençaslan** - Product Owner
-- **Naime Yöndem** - UI/UX Designer
+
+<table>
+  <tr>
+    <th>Ad Soyad</th>
+    <th>Ünvan</th>
+    <th>Sosyal Medya</th>
+  </tr>
+  <tr>
+    <td><img src="https://media.licdn.com/dms/image/D4D03AQHZNwGJOLKBrw/profile-displayphoto-shrink_200_200/0/1712146944360?e=1726099200&v=beta&t=vwZ6rLzcSZioqSJlI8cWA1nZvGUDCcoyjM7odAseN-c" width="50"/> Melike Yiğenoğlu</td>
+    <td>Scrum Master</td>
+    <td>
+      <a href="https://github.com/melekom">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
+      </a> 
+      <a href="https://linkedin.com/in/melikeyigenoglux">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="https://media.licdn.com/dms/image/D4D03AQE2L5nXfeBWxw/profile-displayphoto-shrink_200_200/0/1698991099785?e=1726099200&v=beta&t=IqvruaIKBkgByj6v34CuNMtgoMBBURQnx6KZd09zYIg" width="50"/> Oğuzhan Gençaslan</td>
+    <td>Product Owner</td>
+    <td>
+      <a href="https://github.com/oguzhangencaslan">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
+      </a> 
+      <a href="https://linkedin.com/in/oguzhangencaslan">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="https://media.licdn.com/dms/image/D4D03AQHaFnGXzHT9GQ/profile-displayphoto-shrink_200_200/0/1709732130539?e=1726099200&v=beta&t=duxxk0xlKL8xemPsaTOqu1yOehh2Uafg8YtfT8bjAy0" width="50"/> Muhammed Talha Peri</td>
+    <td>Developer</td>
+    <td>
+      <a href="https://github.com/talhaperi1903">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
+      </a> 
+      <a href="https://www.linkedin.com/in/muhammed-talha-peri">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="https://media.licdn.com/dms/image/D4D03AQE5FIkLdrtpLQ/profile-displayphoto-shrink_200_200/0/1699274020569?e=1726099200&v=beta&t=n5PXzqHotaLn_LW3adapPOGnUq69nMZe4m15anwYX4c" width="50"/> Recep Taha Aydın</td>
+    <td>Developer</td>
+    <td>
+      <a href="https://github.com/receptahaydin">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
+      </a> 
+      <a href="https://linkedin.com/in/receptahaaydin">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="https://avatars.githubusercontent.com/u/6?v=4" width="50"/> Naime Yöndem</td>
+    <td>Developer</td>
+    <td>
+      <a href="https://github.com/naimeyondem">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
+      </a> 
+      <a href="https://linkedin.com/in/naimeyondem">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/41f05ca4-8877-4270-9d49-7077eab71329"/> Bavul</td>
+    <td>Startup</td>
+    <td>
+      <a href="https://github.com/receptahaydin/bootcamp-grup-23">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
 
 ## Ürün İsmi
 --Bavul--
