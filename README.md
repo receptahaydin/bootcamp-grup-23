@@ -42,6 +42,14 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
 
 # Sprint 1
 
+- Sprint Notları: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+
+- Sprint boyunca tamamlanması öngörülen puan: 30 Puan
+
+- Puan belirleme yöntemi: Toplamda proje süresince tamamlanması gereken 100 puanlık bir backlog bulunmaktadır. Bu nedenle, 3 sprint'e bölündüğünde, ilk sprint'in en az 30 puan ile başlaması gerektiği kararlaştırıldı.
+
+- Daily Scrum: Toplantı kararları Whatsapp üzerinden alındı, ancak Daily Scrum toplantılarının Discord üzerinden yapılmasına karar verildi. Daily Scrum toplantısı örneği jpeg veya word formatında Readme'de paylaşılmıştır.
+
 <details>
     <summary><h3>Sprint 1 - Ekran Görüntüleri</h3></summary>
   <table style="width: 100%;">
