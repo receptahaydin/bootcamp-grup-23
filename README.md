@@ -13,7 +13,7 @@ Flutter 23
 - **Naime Yöndem** - UI/UX Designer
 
 ## Ürün İsmi
-Bavul
+--Bavul--
 
 ## Ürün Açıklaması
 Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamasıdır. Kapsamlı ve kişiselleştirilebilir listelerle eşyalarınızı düzenler, hava durumu ve gezilecek yer önerileri sunar. Instagram entegrasyonu ile deneyimlerinizi paylaşabilir, yapılacaklar listesi ile evdeki önemli detayları takip edebilirsiniz.
