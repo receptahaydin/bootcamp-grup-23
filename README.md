@@ -14,9 +14,9 @@ Flutter 23
     <th>Sosyal Medya</th>
   </tr>
   <tr>
-    <td><img src="https://media.licdn.com/dms/image/D4D03AQHZNwGJOLKBrw/profile-displayphoto-shrink_200_200/0/1712146944360?e=1726099200&v=beta&t=vwZ6rLzcSZioqSJlI8cWA1nZvGUDCcoyjM7odAseN-c" width="50"/> Melike Yiğenoğlu</td>
-    <td>Scrum Master</td>
-    <td>
+    <td align="center"><img src="https://media.licdn.com/dms/image/D4D03AQHZNwGJOLKBrw/profile-displayphoto-shrink_200_200/0/1712146944360?e=1726099200&v=beta&t=vwZ6rLzcSZioqSJlI8cWA1nZvGUDCcoyjM7odAseN-c" width="50"/> Melike Yiğenoğlu</td>
+    <td align="center">Scrum Master</td>
+    <td align="center">
       <a href="https://github.com/melekom">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
       </a> 
@@ -26,9 +26,9 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td><img src="https://media.licdn.com/dms/image/D4D03AQE2L5nXfeBWxw/profile-displayphoto-shrink_200_200/0/1698991099785?e=1726099200&v=beta&t=IqvruaIKBkgByj6v34CuNMtgoMBBURQnx6KZd09zYIg" width="50"/> Oğuzhan Gençaslan</td>
-    <td>Product Owner</td>
-    <td>
+    <td align="center"><img src="https://media.licdn.com/dms/image/D4D03AQE2L5nXfeBWxw/profile-displayphoto-shrink_200_200/0/1698991099785?e=1726099200&v=beta&t=IqvruaIKBkgByj6v34CuNMtgoMBBURQnx6KZd09zYIg" width="50"/> Oğuzhan Gençaslan</td>
+    <td align="center">Product Owner</td>
+    <td align="center">
       <a href="https://github.com/oguzhangencaslan">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
       </a> 
@@ -38,9 +38,9 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td><img src="https://media.licdn.com/dms/image/D4D03AQHaFnGXzHT9GQ/profile-displayphoto-shrink_200_200/0/1709732130539?e=1726099200&v=beta&t=duxxk0xlKL8xemPsaTOqu1yOehh2Uafg8YtfT8bjAy0" width="50"/> Muhammed Talha Peri</td>
-    <td>Developer</td>
-    <td>
+    <td align="center"><img src="https://media.licdn.com/dms/image/D4D03AQHaFnGXzHT9GQ/profile-displayphoto-shrink_200_200/0/1709732130539?e=1726099200&v=beta&t=duxxk0xlKL8xemPsaTOqu1yOehh2Uafg8YtfT8bjAy0" width="50"/> Muhammed Talha Peri</td>
+    <td align="center">Developer</td>
+    <td align="center">
       <a href="https://github.com/talhaperi1903">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
       </a> 
@@ -50,9 +50,9 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td><img src="https://media.licdn.com/dms/image/D4D03AQE5FIkLdrtpLQ/profile-displayphoto-shrink_200_200/0/1699274020569?e=1726099200&v=beta&t=n5PXzqHotaLn_LW3adapPOGnUq69nMZe4m15anwYX4c" width="50"/> Recep Taha Aydın</td>
-    <td>Developer</td>
-    <td>
+    <td align="center"><img src="https://media.licdn.com/dms/image/D4D03AQE5FIkLdrtpLQ/profile-displayphoto-shrink_200_200/0/1699274020569?e=1726099200&v=beta&t=n5PXzqHotaLn_LW3adapPOGnUq69nMZe4m15anwYX4c" width="50"/> Recep Taha Aydın</td>
+    <td align="center">Developer</td>
+    <td align="center">
       <a href="https://github.com/receptahaydin">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
       </a> 
@@ -62,9 +62,9 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td><img src="[https://avatars.githubusercontent.com/u/6?v=4](https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg)" width="50"/> Naime Yöndem</td>
-    <td>Developer</td>
-    <td>
+    <td align="center"><img src="https://avatars.githubusercontent.com/u/6?v=4" width="50"/> Naime Yöndem</td>
+    <td align="center">Developer</td>
+    <td align="center">
       <a href="https://github.com/naimeyondem">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
       </a> 
@@ -74,15 +74,16 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/41f05ca4-8877-4270-9d49-7077eab71329" width="100"/> Bavul</td>
-    <td>Startup</td>
-    <td>
+    <td align="center"><img src="![Adsız tasarım (3)](https://github.com/receptahaydin/bootcamp-grup-23/assets/49415597/a9eb8802-083b-49ff-b858-67a2a0dc8b14)" width="50"/> Bavul</td>
+    <td align="center">Startup</td>
+    <td align="center">
       <a href="https://github.com/receptahaydin/bootcamp-grup-23">
         <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
       </a>
     </td>
   </tr>
 </table>
+
 
 
 ## Ürün İsmi
