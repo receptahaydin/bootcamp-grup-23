@@ -10,36 +10,7 @@ Flutter 23
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        th, td {
-            padding: 15px;
-            text-align: center;
-            border: 1px solid #dddddd;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        img {
-            border-radius: 50%;
-        }
-        a {
-            margin: 0 5px;
-        }
-    </style>
-    <title>Team Members</title>
-</head>
-<body>
-
-<h2>Takım Üyeleri</h2>
+   
 
 <table>
   <tr>
