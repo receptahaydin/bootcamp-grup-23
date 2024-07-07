@@ -51,11 +51,21 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
 
 #### Authentication Pages
 
-**Login Page**
-![Login Page](https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/5a936482-e250-4794-aa98-f2e065ae8a9e)
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
 
-**Create an Account Page**
-![Create an Account Page](https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/ded72697-2170-444a-9531-6f7e0c4dc8e5)
+<div style="margin: 10px;">
+  <h3>Login Page</h3>
+  <img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/5a936482-e250-4794-aa98-f2e065ae8a9e" alt="Login Page" style="max-width: 100%; height: auto;">
+</div>
 
-**Log into Your Account Page**
-![Log into Your Account Page](https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/7ccc9628-3943-4961-a4ae-382d3c0f47cb)
+<div style="margin: 10px;">
+  <h3>Create an Account Page</h3>
+  <img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/ded72697-2170-444a-9531-6f7e0c4dc8e5" alt="Create an Account Page" style="max-width: 100%; height: auto;">
+</div>
+
+<div style="margin: 10px;">
+  <h3>Log into Your Account Page</h3>
+  <img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/7ccc9628-3943-4961-a4ae-382d3c0f47cb" alt="Log into Your Account Page" style="max-width: 100%; height: auto;">
+</div>
+
+</div>
