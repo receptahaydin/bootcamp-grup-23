@@ -28,3 +28,34 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
 - Kullanıcıların seyahatlerini Instagram’da etiketle paylaşarak ödüller kazanabileceği bir sistem.
 - Evde unutulmaması gereken kontrolleri ve önlemleri içeren yapılacaklar listesi özelliği.
 - Gideceğiniz yerin hava durumuna göre öneriler ve seyahat süresince gezilecek yerleri sunan özellik.
+
+## Hedef Kitle
+- Seyahat Yapmayı Sevenler
+- İş Seyahatine Çıkan Profesyoneller
+- Tatil Planlayan Ebeveynler
+- Seyahat Blog Yazarları ve Influencer'lar
+- Erasmus ve Değişim Programı Öğrencileri
+- Doğa Yürüyüşü ve Kamp Yapan Bireyler
+- 
+## Product Backlog URL
+[Bavul Trello Board]([https://www.example.com](https://trello.com/invite/b/vB6Uyr6D/ATTI6561550ffa27ebcd4c1f4cde5efea2cb2A922FB1/oua-23))
+
+## Table of Contents
+
+- [Sprint 1](#sprint-1)
+  - [App Screenshots](#app-screenshots)
+
+## Sprint 1
+
+### App Screenshots
+
+#### Authentication Pages
+
+**Login Page**
+![Login Page](https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/5a936482-e250-4794-aa98-f2e065ae8a9e)
+
+**Create an Account Page**
+![Create an Account Page](https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/ded72697-2170-444a-9531-6f7e0c4dc8e5)
+
+**Log into Your Account Page**
+![Log into Your Account Page](https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/7ccc9628-3943-4961-a4ae-382d3c0f47cb)
