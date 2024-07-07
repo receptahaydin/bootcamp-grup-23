@@ -50,7 +50,7 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
     </tr>
     <tr>
       <video width="320" height="240" controls>
-  <source src="video.mp4" type="video/mp4">
+  <source src="[video.mp4](https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/75dd3484-8ece-47a1-8896-9ddcfc698a9c" type="video/mp4">
   Your browser does not support the video tag.
 </video>
       <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/63547928-be01-42a8-8468-3181436709fb" style="max-width: 100%; height: auto;"></td>
