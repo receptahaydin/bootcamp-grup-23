@@ -53,6 +53,8 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
 ## Toplantı Ekran Görüntüleri
 
 ![Ekran_Goruntusu_154](https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/210dbf3e-8e06-42c3-b065-b8d2cadf6cd3)
+![Ekran görüntüsü 2024-07-07 155315](https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/633dc783-b9e4-43de-a4e1-7421181ad0e5)
+![Ekran görüntüsü 2024-07-07 155409](https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/fa932986-3b0d-49b2-9d44-7f8785bfdc71)
 
 <details>
     <summary><h3>Sprint 1 - Ekran Görüntüleri</h3></summary>
