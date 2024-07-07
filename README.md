@@ -74,7 +74,7 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td align="center"><img src="![Adsız tasarım (3)](https://github.com/receptahaydin/bootcamp-grup-23/assets/49415597/a9eb8802-083b-49ff-b858-67a2a0dc8b14)" width="50"/> Bavul</td>
+    <td align="center"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/49415597/a9eb8802-083b-49ff-b858-67a2a0dc8b14" width="50"/> Bavul</td>
     <td align="center">Startup</td>
     <td align="center">
       <a href="https://github.com/receptahaydin/bootcamp-grup-23">
