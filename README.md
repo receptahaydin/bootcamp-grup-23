@@ -62,7 +62,7 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td><img src="https://avatars.githubusercontent.com/u/6?v=4" width="50"/> Naime Yöndem</td>
+    <td><img src="[https://avatars.githubusercontent.com/u/6?v=4](https://static.vecteezy.com/system/resources/thumbnails/005/129/844/small_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg)" width="50"/> Naime Yöndem</td>
     <td>Developer</td>
     <td>
       <a href="https://github.com/naimeyondem">
@@ -74,7 +74,7 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/41f05ca4-8877-4270-9d49-7077eab71329" width="150"/> Bavul</td>
+    <td><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/41f05ca4-8877-4270-9d49-7077eab71329" width="100"/> Bavul</td>
     <td>Startup</td>
     <td>
       <a href="https://github.com/receptahaydin/bootcamp-grup-23">
