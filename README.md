@@ -71,7 +71,7 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td align="center"><img src="https://avatars.githubusercontent.com/u/6?v=4" width="50"/><br>Naime Yöndem</td>
+    <td align="center"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/49415597/5743f68c-377d-4094-8e8e-55fd5e310032" width="50"/><br>Naime Yöndem</td>
     <td align="center">Developer</td>
     <td align="center">
       <a href="https://github.com/naimeyondem">
