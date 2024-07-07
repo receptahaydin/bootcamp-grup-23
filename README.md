@@ -52,8 +52,8 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
       <td colspan="4" style="text-align: center;"><h2>Authentication pages</h2></td>
     </tr>
     <tr>
-      <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/10.png" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src=(https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/7ccc9628-3943-4961-a4ae-382d3c0f47cb) style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/7ccc9628-3943-4961-a4ae-382d3c0f47cb" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/7ccc9628-3943-4961-a4ae-382d3c0f47cb" style="max-width: 100%; height: auto;"></td>
       <td style="width: 25%;"><img src="bootcampFiles/sprintOne/screenshots/12.png" style="max-width: 100%; height: auto;"></td>
     </tr>
     <tr>
