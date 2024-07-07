@@ -1,4 +1,4 @@
-<img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/41f05ca4-8877-4270-9d49-7077eab71329" alt="zaten" style="max-width: 100%;">
+<img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/41f05ca4-8877-4270-9d49-7077eab71329" alt="zaten" style="max-width: 80%;">
 
 # Takım İsmi
 Flutter 23
