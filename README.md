@@ -49,6 +49,7 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
       <td colspan="4" style="text-align: center;"><h2>Intro ve Giriş Ekranı</h2></td>
     </tr>
     <tr>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/5f46312f-1fc9-466a-a426-de528df94e60" style="max-width: 100%; height: auto;"></td>
       <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/63547928-be01-42a8-8468-3181436709fb" style="max-width: 100%; height: auto;"></td>
     </tr>
     <tr>
@@ -76,6 +77,3 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
     </tr>
   </table>
   </details>
-
-## Intro
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qIaWozjDyPk?si=iTPr3wV22mf-JRP5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
