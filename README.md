@@ -181,7 +181,7 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
 
 <details>
     <summary><h3>Sprint 1 - Ürün Lansmanı: Çok Yakında Instagram'dayız!</h3></summary>
-![COK_YAKINDA_4](https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/0b204a57-f509-4b90-aee8-fa65f0ff25a6)
+    <img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/0b204a57-f509-4b90-aee8-fa65f0ff25a6" style="max-width: 100%; height: auto;">
 </details>
 
 ## Sprint Review
