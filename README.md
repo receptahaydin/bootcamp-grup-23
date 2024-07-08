@@ -185,6 +185,7 @@ Alınan Kararlar:
 Veritabanı Oluşturulması: Veritabanı oluşturulmasının, email ile toplanacak veriler için gerekli olduğu görülmüştür. Ancak, veritabanı form sayfası için gerekli olmadığından dolayı, bu PBI bir sonraki sprint'e aktarılmıştır.
 Çıkan Ürünün Testleri: Ürünün çalışma ve test aşamalarında herhangi bir problem görülmemiştir.
 Ekstra Özellikler: Ekstra eklenmesi gereken özellikler belirlenmiştir ve bunlar gelecek sprint'lerde ele alınacaktır.
+
 Sprint Review Katılımcıları:
 - Recep Taha Aydın
 - Melike Yiğenoğlu
