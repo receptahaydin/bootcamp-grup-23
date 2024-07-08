@@ -183,7 +183,9 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
 Alınan Kararlar:
 
 Veritabanı Oluşturulması: Veritabanı oluşturulmasının, email ile toplanacak veriler için gerekli olduğu görülmüştür. Ancak, veritabanı form sayfası için gerekli olmadığından dolayı, bu PBI bir sonraki sprint'e aktarılmıştır.
+
 Çıkan Ürünün Testleri: Ürünün çalışma ve test aşamalarında herhangi bir problem görülmemiştir.
+
 Ekstra Özellikler: Ekstra eklenmesi gereken özellikler belirlenmiştir ve bunlar gelecek sprint'lerde ele alınacaktır.
 
 Sprint Review Katılımcıları:
@@ -194,8 +196,8 @@ Sprint Review Katılımcıları:
 - Naime Yöndem
   
 ## Sprint Retrospective
-Alınan Kararlar:
-
 Görev Dağılımı: Takım içindeki görev dağılımıyla ilgili düzenlemeler yapılması kararlaştırılmıştır.
+
 Tahmin Puanları: Tahmin puanlarının gözden geçirilmesi gerektiği ve sprint planlama toplantılarında gerekli geri bildirimlerin developer'lar tarafından verilmesinin sağlanması gerektiği belirtilmiştir.
+
 Unit Test Eforu: Unit test'ler için ayrılan efor/saat artırılmalıdır.
