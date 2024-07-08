@@ -188,6 +188,18 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
     <img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/0b204a57-f509-4b90-aee8-fa65f0ff25a6" style="max-width: 100%; height: auto;">
 </details>
 
+<details>
+    <summary><h3>Sprint 1 - Ürün Lansmanı</h3></summary>
+  <table style="width: 100%;">
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Çok Yakında Instagram'dayız!</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/0b204a57-f509-4b90-aee8-fa65f0ff25a6" style="max-width: 100%; height: auto;"></td>
+    </tr>
+  </table>
+  </details>
+
 ## Sprint Review
 Alınan Kararlar:
 
