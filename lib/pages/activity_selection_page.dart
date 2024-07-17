@@ -5,7 +5,7 @@ class ActivitySelectionPage extends StatefulWidget {
   final String startDate;
   final String endDate;
   final String tripType;
-  final Map<String, List<String>> activities;
+  final List<String> activities;
 
   const ActivitySelectionPage({
     required this.city,
@@ -32,27 +32,19 @@ class _ActivitySelectionPageState extends State<ActivitySelectionPage> {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView(
-          children: widget.activities.entries.map((entry) {
-            return ExpansionTile(
-              title: Text(
-                entry.key,
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              ),
-              children: entry.value.map((activity) {
-                return CheckboxListTile(
-                  title: Text(activity),
-                  value: _selectedActivities.contains(activity),
-                  onChanged: (bool? value) {
-                    setState(() {
-                      if (value == true) {
-                        _selectedActivities.add(activity);
-                      } else {
-                        _selectedActivities.remove(activity);
-                      }
-                    });
-                  },
-                );
-              }).toList(),
+          children: widget.activities.map((activity) {
+            return CheckboxListTile(
+              title: Text(activity),
+              value: _selectedActivities.contains(activity),
+              onChanged: (bool? value) {
+                setState(() {
+                  if (value == true) {
+                    _selectedActivities.add(activity);
+                  } else {
+                    _selectedActivities.remove(activity);
+                  }
+                });
+              },
             );
           }).toList(),
         ),
