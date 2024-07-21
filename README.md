@@ -292,8 +292,7 @@ Unit Test Eforu: Unit test'ler için ayrılan efor/saat artırılmalıdır.
     <summary><h3>Sprint 2 - Kalite Yönetim Planı</h3></summary>
     <table style="width: 100%;">
         <tr>
-            <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/d2cd0f66-fe04-41fc-9db7-a6918cb94677" style="max-width: 100%; height: auto;"></td>
-            <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/64d1aa07-5619-4608-a42e-6a25126eb04d" style="max-width: 100%; height: auto;"></td>
+            <td>Kalite yönetim planına <a href="https://github.com/user-attachments/files/16325761/Bootcamp24.F23.pdf" target="_blank">buradan ulaşabilirsiniz</a>.</td>
         </tr>
     </table>
 </details>
