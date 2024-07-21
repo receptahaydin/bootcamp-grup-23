@@ -287,3 +287,4 @@ Unit Test Eforu: Unit test'ler için ayrılan efor/saat artırılmalıdır.
     </tr>
   </table>
   </details>
+[Bootcamp24 F23.pdf](https://github.com/user-attachments/files/16325761/Bootcamp24.F23.pdf)
