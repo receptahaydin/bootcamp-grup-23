@@ -192,7 +192,7 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
   </details>
 
 ## Sprint Review
-Alınan Kararlar:
+### Alınan Kararlar
 
 Veritabanı Oluşturulması: Veritabanı oluşturulmasının, email ile toplanacak veriler için gerekli olduğu görülmüştür. Ancak, veritabanı form sayfası için gerekli olmadığından dolayı, bu PBI bir sonraki sprint'e aktarılmıştır.
 
@@ -298,7 +298,7 @@ Unit Test Eforu: Unit test'ler için ayrılan efor/saat artırılmalıdır.
 </details>
 
 ## Sprint Review
-#### Alınan Kararlar:
+### Alınan Kararlar
 
 Uygulama İçinde Seçilen Seyahat Rotasını Temsil Eden Görsel: Manuel ekleme yerine API entegrasyonu ile yapılması kararlaştırıldı.
 
