@@ -203,7 +203,7 @@ Ekstra Özellikler: Ekstra eklenmesi gereken özellikler belirlenmiştir ve bunl
 Sprint Review Katılımcıları:
 - Recep Taha Aydın
 - Melike Yiğenoğlu
-- Talha Peri
+- Muhammed Talha Peri
 - Oğuzhan Gençaslan
 - Naime Yöndem
   
