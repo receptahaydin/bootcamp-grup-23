@@ -250,8 +250,8 @@ Unit Test Eforu: Unit test'ler için ayrılan efor/saat artırılmalıdır.
       <td colspan="4" style="text-align: center;"><h2>Yapay Zeka Çıktıları - 1</h2></td>
     </tr>
     <tr>
-      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/7d50d676-18a2-45cd-a510-71c50707f49f" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/3d273abf-ce68-49c2-8533-e79207130e8d" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/68748daa-2fb0-424d-af5f-23faf120bdc0" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/057e7e7d-0530-4036-a928-4f2f7e8f47af" style="max-width: 100%; height: auto;"></td>
       <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/05806311-555e-4091-9fb9-b83f209b9968" style="max-width: 100%; height: auto;"></td>
       <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/1178af64-6598-44b4-a1fd-25d4dbf1f6f2" style="max-width: 100%; height: auto;"></td>
     </tr>
