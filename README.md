@@ -318,8 +318,8 @@ Sprint Review Katılımcıları:
 - Naime Yöndem
   
 ## Sprint Retrospective
-Instagram İçin Alternatif Post Önerileri: Gerekli seviyeye ulaştığı için görev dağılımı tekrardan gözden geçirildi ve UI kısmına ağırlık verilmesi gerektiğine karar verildi.
+- Instagram için alternatif post önerileri gerekli seviyeye ulaştığı için görev dağılımı tekrardan gözden geçirildi ve UI kısmına ağırlık verilmesi gerektiğine karar verildi.
 
-Uygulamanın Renk Paletleri: Tekrardan değerlendirildi ve gözü yorması açısından ara renkler kaldırıldı.
+- Uygulamanın renk paletleri tekrardan değerlendirildi ve gözü yorması açısından ara renkler kaldırıldı.
 
-Gemini AI: Kullanıcıya gideceği yer ve tarih ile alakalı önemli bilgilendirmeler sağlayacak şekilde yapılandırılacaktır.
+- Gemini AI kullanıcıya gideceği yer ve tarih ile alakalı önemli bilgilendirmeler sağlayacak şekilde yapılandırılacaktır.
