@@ -248,11 +248,24 @@ Unit Test Eforu: Unit test'ler için ayrılan efor/saat artırılmalıdır.
       <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/1178af64-6598-44b4-a1fd-25d4dbf1f6f2" style="max-width: 100%; height: auto;"></td>
     </tr>
     <tr>
+      <td colspan="4" style="text-align: center;"><h2>Yeni Gezi Oluşturma - 2</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/ddaa2daa-5f08-4891-a3e6-069444fb694e" style="max-width: 100%; height: auto;"></td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Yapay Zeka Çıktıları - 2</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/575d2a47-ea4b-4e42-82b2-a58a302e4198" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/d9c354a1-3bf2-4b8c-b3a3-2ff898ec05c7" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/c06de477-9aff-4523-b44a-350cea137ab5" style="max-width: 100%; height: auto;"></td>
+    </tr>
+    <tr>
       <td colspan="4" style="text-align: center;"><h2>Oluşturulan Geziler</h2></td>
     </tr>
     <tr>
-      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/7eb85374-a710-4723-9db8-2ef3f41b0775" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/485e575d-0fcf-41d5-95fa-bc4c5595ed5a" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/8988e983-b743-471f-a3f6-791ff45611c3" style="max-width: 100%; height: auto;"></td>
     </tr>
   </table>
   </details>
