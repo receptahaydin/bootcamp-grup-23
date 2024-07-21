@@ -296,3 +296,30 @@ Unit Test Eforu: Unit test'ler için ayrılan efor/saat artırılmalıdır.
         </tr>
     </table>
 </details>
+
+## Sprint Review
+Alınan Kararlar:
+
+Uygulama İçinde Seçilen Seyahat Rotasını Temsil Eden Görsel: Manuel ekleme yerine API entegrasyonu ile yapılması kararlaştırıldı.
+
+Hava Durumu Entegrasyonu: API entegrasyonu ile kullanıcıların seyahat edeceği tarih ve lokasyon için hava durumu entegrasyonu sağlandı.
+
+Hesap Oluşturma Çalışmaları: UI tasarımıyla birlikte yapılması kararlaştırıldı.
+
+Kullanıcı Seyahat Kayıtları: Kullanıcıların yaptığı seyahatlerin kaydedilmesinin, ihtiyaç listesinin ardından yapılması kararı alındı. Ayrıca burada Firebase kullanılacaktır.
+
+Kalite Yönetim Planı: Kalite yönetim planı çerçevesinde ilerlemek için bir plan oluşturuldu.
+
+Sprint Review Katılımcıları:
+- Recep Taha Aydın
+- Melike Yiğenoğlu
+- Muhammed Talha Peri
+- Oğuzhan Gençaslan
+- Naime Yöndem
+  
+## Sprint Retrospective
+Instagram İçin Alternatif Post Önerileri: Gerekli seviyeye ulaştığı için görev dağılımı tekrardan gözden geçirildi ve UI kısmına ağırlık verilmesi gerektiğine karar verildi.
+
+Uygulamanın Renk Paletleri: Tekrardan değerlendirildi ve gözü yorması açısından ara renkler kaldırıldı.
+
+Gemini AI: Kullanıcıya gideceği yer ve tarih ile alakalı önemli bilgilendirmeler sağlayacak şekilde yapılandırılacaktır.
