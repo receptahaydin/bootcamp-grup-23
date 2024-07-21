@@ -232,6 +232,12 @@ Unit Test Eforu: Unit test'ler için ayrılan efor/saat artırılmalıdır.
 <details>
     <summary><h3>Sprint 2 - Ürün Ekran Görüntüleri</h3></summary>
   <table style="width: 100%;">
+      <tr>
+      <td colspan="4" style="text-align: center;"><h2>Intro</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/8b420386-49ac-4711-9ea6-0cd7ad085dc3" style="max-width: 100%; height: auto;"></td>
+    </tr>
     <tr>
       <td colspan="4" style="text-align: center;"><h2>Yeni Gezi Oluşturma - 1</h2></td>
     </tr>
