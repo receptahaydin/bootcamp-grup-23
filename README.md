@@ -226,6 +226,8 @@ Unit Test Eforu: Unit test'ler için ayrılan efor/saat artırılmalıdır.
 
 ## Toplantı Ekran Görüntüleri
 
+![Ekran görüntüsü 2024-07-21 215558](https://github.com/user-attachments/assets/92cf8b3a-56f2-4345-a5fa-b81f6e50b00d)
+![Ekran görüntüsü 2024-07-21 215708](https://github.com/user-attachments/assets/ca924f86-c168-4ad9-a256-dbac62bf3d92)
 ![Ekran_Goruntusu_157](https://github.com/user-attachments/assets/1e1ca8ff-74b0-438a-9ae8-a2544b40b1a2)
 ![Ekran_goruntusu_2024-07-18_234046](https://github.com/user-attachments/assets/49099ece-ffd8-4926-a4f7-65913c4e9040)
 
