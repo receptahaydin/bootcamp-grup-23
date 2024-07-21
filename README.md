@@ -236,17 +236,16 @@ Unit Test Eforu: Unit test'ler için ayrılan efor/saat artırılmalıdır.
       <td colspan="4" style="text-align: center;"><h2>Yeni Gezi Oluşturma - 1</h2></td>
     </tr>
     <tr>
-      <td style="width: 25%;"><img src="![1](https://github.com/user-attachments/assets/dd59f4fc-2956-4a44-a74c-ad218cd2e0a0)" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/86358230-966f-4709-bbdc-8c7614c2b6a8" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/dd59f4fc-2956-4a44-a74c-ad218cd2e0a0" style="max-width: 100%; height: auto;"></td>
     </tr>
     <tr>
-      <td colspan="4" style="text-align: center;"><h2>Yapay Zeka Çıktıları</h2></td>
+      <td colspan="4" style="text-align: center;"><h2>Yapay Zeka Çıktıları - 1</h2></td>
     </tr>
     <tr>
-      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/3226a9db-1568-4ebc-bb1e-d1fb96959afe" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/77157c3d-9cb8-45dc-9af5-e34d31779928" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/e6397e76-8a33-4565-9ae7-f12fe5fbdb4b" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/514cd3f1-005e-4c31-85b5-630098a70941" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/68748daa-2fb0-424d-af5f-23faf120bdc0" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/057e7e7d-0530-4036-a928-4f2f7e8f47af" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/05806311-555e-4091-9fb9-b83f209b9968" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/1178af64-6598-44b4-a1fd-25d4dbf1f6f2" style="max-width: 100%; height: auto;"></td>
     </tr>
     <tr>
       <td colspan="4" style="text-align: center;"><h2>Oluşturulan Geziler</h2></td>
