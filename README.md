@@ -59,7 +59,7 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td align="center"><img src="![image](https://github.com/user-attachments/assets/3dfe74ab-691f-495e-b1e8-850c4c804bb4)
+    <td align="center"><img src="(https://github.com/user-attachments/assets/3dfe74ab-691f-495e-b1e8-850c4c804bb4)
 " width="50"/><br>Recep Taha Aydın</td>
     <td align="center">Developer</td>
     <td align="center">
