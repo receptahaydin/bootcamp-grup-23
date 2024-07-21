@@ -298,7 +298,7 @@ Unit Test Eforu: Unit test'ler için ayrılan efor/saat artırılmalıdır.
 </details>
 
 ## Sprint Review
-Alınan Kararlar:
+### Alınan Kararlar:
 
 Uygulama İçinde Seçilen Seyahat Rotasını Temsil Eden Görsel: Manuel ekleme yerine API entegrasyonu ile yapılması kararlaştırıldı.
 
