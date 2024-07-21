@@ -213,3 +213,47 @@ Görev Dağılımı: Instagram için tasarımcıların görev dağılımı yenid
 Tahmin Puanları: Tahmin puanlarının gözden geçirilmesi gerektiği ve sprint planlama toplantılarında gerekli geri bildirimlerin developer'lar tarafından verilmesinin sağlanması gerektiği belirtilmiştir.
 
 Unit Test Eforu: Unit test'ler için ayrılan efor/saat artırılmalıdır.
+
+# Sprint 2
+
+- Sprint Notları: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+
+- Sprint boyunca tamamlanması öngörülen puan: 30 Puan
+
+- Puan belirleme yöntemi: Toplamda proje süresince tamamlanması gereken 100 puanlık bir backlog bulunmaktadır. Bu nedenle, 3 sprint'e bölündüğünde, ikinci sprint'in en az 30 puan ile başlaması gerektiği kararlaştırıldı. İlk ve ikinci sprint sonucunda 60 puana ulaşıldı.
+
+- Daily Scrum: Daily Scrum toplantıları Whatsapp üzerinden kararlaştırılıp Discord üzerinden gerçekleştirilmiştir. Daily Scrum toplantısı örneği jpeg formatında Readme'de paylaşılmıştır. Bununla beraber, mentörle Meet üzerinden bir toplantı yapılmış ve geri bildirim alınmıştır; bu toplantının ekran görüntüleri de Readme'de mevcuttur. Ayrıca, Instagram hesabı için Discord üzerinde yeni bir kanal kurulmuş olup planlama ve içerik üretimi burada yapılmıştır.
+
+## Toplantı Ekran Görüntüleri
+
+![Ekran_Goruntusu_157](https://github.com/user-attachments/assets/1e1ca8ff-74b0-438a-9ae8-a2544b40b1a2)
+![Ekran_goruntusu_2024-07-18_234046](https://github.com/user-attachments/assets/49099ece-ffd8-4926-a4f7-65913c4e9040)
+
+<details>
+    <summary><h3>Sprint 2 - Ürün Ekran Görüntüleri</h3></summary>
+  <table style="width: 100%;">
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Yeni Gezi Oluşturma - 1</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="![1](https://github.com/user-attachments/assets/dd59f4fc-2956-4a44-a74c-ad218cd2e0a0)" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/86358230-966f-4709-bbdc-8c7614c2b6a8" style="max-width: 100%; height: auto;"></td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Yapay Zeka Çıktıları</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/3226a9db-1568-4ebc-bb1e-d1fb96959afe" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/77157c3d-9cb8-45dc-9af5-e34d31779928" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/e6397e76-8a33-4565-9ae7-f12fe5fbdb4b" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/514cd3f1-005e-4c31-85b5-630098a70941" style="max-width: 100%; height: auto;"></td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Oluşturulan Geziler</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/7eb85374-a710-4723-9db8-2ef3f41b0775" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/115106072/485e575d-0fcf-41d5-95fa-bc4c5595ed5a" style="max-width: 100%; height: auto;"></td>
+    </tr>
+  </table>
+  </details>
