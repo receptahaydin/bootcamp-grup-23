@@ -59,8 +59,7 @@ Flutter 23
     </td>
   </tr>
   <tr>
-    <td align="center"><img src="(https://github.com/user-attachments/assets/3dfe74ab-691f-495e-b1e8-850c4c804bb4)
-" width="50"/><br>Recep Taha Aydın</td>
+    <td align="center"><img src="https://media.licdn.com/dms/image/D4D03AQE6J1ng5GmyOA/profile-displayphoto-shrink_200_200/0/1721312432945?e=1727308800&v=beta&t=5fywvedrDl4UgAFsL9R_9aK5mUfo_nPB9ogehdoFN6U" width="50"/><br>Recep Taha Aydın</td>
     <td align="center">Developer</td>
     <td align="center">
       <a href="https://github.com/receptahaydin">
