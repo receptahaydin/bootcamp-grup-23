@@ -5,6 +5,8 @@ import 'dart:convert';
 import 'package:google_generative_ai/google_generative_ai.dart';
 import 'package:weather_icons/weather_icons.dart';
 import 'package:bootcamprojeai/pages/activity_selection_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class AddTripPage extends StatefulWidget {
   @override
@@ -20,6 +22,8 @@ class _AddTripPageState extends State<AddTripPage> {
   bool _isLoading = false;
   String _weatherInfo = "";
   IconData _weatherIcon = Icons.wb_sunny;
+  final User? user = FirebaseAuth.instance.currentUser;
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   final String apiKey =
       ''; // API anahtarını buraya ekleyin
@@ -580,24 +584,19 @@ class _AddTripPageState extends State<AddTripPage> {
     print("Yapay Zeka Yanıtı:");
     print(response.text);
 
-    // Yanıt metnini ayrıştır
     final responseText = response.text ?? "";
-    final lines = responseText.split('\n'); // Satırlara ayır
+    final lines = responseText.split('\n');
     Map<String, List<String>> result = {};
     String currentCategory = "";
 
     for (var line in lines) {
-      line = line.trim(); // Satır başındaki ve sonundaki boşlukları temizle
+      line = line.trim();
 
       if (line.startsWith("**") && line.endsWith("**")) {
-        // Yeni kategori
-        currentCategory =
-            line.replaceAll("*", "").trim(); // `*` karakterlerini temizle
+        currentCategory = line.replaceAll("*", "").trim();
         result[currentCategory] = [];
       } else if (line.startsWith("*")) {
-        // Kategoriye ait madde
-        final item =
-            line.replaceAll("*", "").trim(); // `*` karakterlerini temizle
+        final item = line.replaceAll("*", "").trim();
         if (item.isNotEmpty) {
           result[currentCategory]?.add(item);
         }
@@ -619,10 +618,9 @@ class _AddTripPageState extends State<AddTripPage> {
         _isLoading = false;
       });
 
-      // Seçilen şehrin resmini al
       String? cityImageUrl = _cityImages[_selectedCity]?[0]['url'];
 
-      Navigator.push(
+      final result = await Navigator.push(
         context,
         MaterialPageRoute(
           builder: (context) => ActivitySelectionPage(
@@ -632,13 +630,30 @@ class _AddTripPageState extends State<AddTripPage> {
             endDate: DateFormat('yyyy-MM-dd').format(_selectedDateRange!.end),
             tripType: _tripType,
             activitiesAndPacking: packingList,
-            cityImage: cityImageUrl, // Resmi ActivitySelectionPage'e gönder
+            cityImage: cityImageUrl,
           ),
         ),
-      ).then((result) {
-        if (result != null) {
-          Navigator.pop(context, result);
-        }
+      );
+
+      if (result != null) {
+        await _saveTripToFirestore(result);
+        Navigator.pop(context, result);
+      }
+    }
+  }
+
+  Future<void> _saveTripToFirestore(Map<String, dynamic> tripData) async {
+    if (user != null) {
+      await _firestore.collection('trips').add({
+        'userId': user!.uid,
+        'city': tripData['city'],
+        'startDate': tripData['startDate'],
+        'endDate': tripData['endDate'],
+        'tripType': tripData['tripType'],
+        'days': tripData['days'],
+        'selectedActivities': tripData['selectedActivities'],
+        'cityImage': tripData['cityImage'],
+        'createdAt': FieldValue.serverTimestamp(),
       });
     }
   }
@@ -694,14 +709,12 @@ class _AddTripPageState extends State<AddTripPage> {
       return Stack(
         alignment: Alignment.bottomCenter,
         children: [
-          // Şehir Resmi
           ..._cityImages[_selectedCity]!.map((imageData) {
             return Image.network(imageData['url']!);
           }).toList(),
-          // Hava Durumu Bilgisi
           Positioned(
-            bottom: 16.0, // Altta boşluk
-            left: 16.0, // Soldan boşluk
+            bottom: 16.0,
+            left: 16.0,
             child: Container(
               padding: EdgeInsets.all(8.0),
               decoration: BoxDecoration(
@@ -736,7 +749,7 @@ class _AddTripPageState extends State<AddTripPage> {
     return Scaffold(
       appBar: AppBar(
         title: Center(child: const Text("Haydi Bir Gezi Planlayalım!")),
-        backgroundColor: Color(0xff4285f4), // Google Kırmızısı
+        backgroundColor: Color(0xff4285f4),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -758,7 +771,7 @@ class _AddTripPageState extends State<AddTripPage> {
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
-                        color: Color(0xff34a853), // Google Yeşili
+                        color: Color(0xff34a853),
                       ),
                     ),
                     SizedBox(height: 20),
@@ -809,11 +822,11 @@ class _AddTripPageState extends State<AddTripPage> {
       label: Text(
         label,
         style: TextStyle(
-          color: isSelected ? Colors.white : Color(0xffea4335), // Google Mavisi
+          color: isSelected ? Colors.white : Color(0xffea4335),
         ),
       ),
       selected: isSelected,
-      selectedColor: Color(0xffea4335), // Google Mavisi
+      selectedColor: Color(0xffea4335),
       onSelected: (_) {},
     );
   }
@@ -843,7 +856,7 @@ class _AddTripPageState extends State<AddTripPage> {
             return Theme(
               data: ThemeData.light().copyWith(
                 colorScheme: ColorScheme.light().copyWith(
-                  primary: Color(0xffea4335), // Google Kırmızısı
+                  primary: Color(0xffea4335),
                 ),
               ),
               child: child!,
@@ -868,23 +881,18 @@ class _AddTripPageState extends State<AddTripPage> {
           Icon(
             icon,
             size: 24,
-            color: isSelected
-                ? Colors.white
-                : Color(
-                    0xff4285f4), // Seçili durumda beyaz, seçili değilse Google Mavisi
+            color: isSelected ? Colors.white : Color(0xff4285f4),
           ),
           Text(
             label,
             style: TextStyle(
-              color: isSelected
-                  ? Colors.white
-                  : Colors.grey, // Seçili durumda beyaz, seçili değilse gri
+              color: isSelected ? Colors.white : Colors.grey,
             ),
           ),
         ],
       ),
       selected: isSelected,
-      selectedColor: Color(0xff4285f4), // Seçili durumda Google Mavisi
+      selectedColor: Color(0xff4285f4),
       onSelected: (bool selected) {
         setState(() {
           _tripType = label;
@@ -900,7 +908,7 @@ class _AddTripPageState extends State<AddTripPage> {
           ? CircularProgressIndicator(color: Colors.white)
           : Text("Bavul Hazırla!", style: TextStyle(color: Colors.white)),
       style: ElevatedButton.styleFrom(
-        backgroundColor: Color(0xffea4335), // Google Kırmızısı
+        backgroundColor: Color(0xffea4335),
         padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12.0),

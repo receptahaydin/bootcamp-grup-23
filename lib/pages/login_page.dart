@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+import 'package:firebase_auth/firebase_auth.dart'; // Firebase Auth import
+import 'package:google_sign_in/google_sign_in.dart'; // Google Sign-In import
 import 'package:shared_preferences/shared_preferences.dart';
-import 'dart:convert';
-
+import 'package:flutter_svg/flutter_svg.dart'; // SVG desteği için import
 import 'home_page.dart';
 import 'register_page.dart';
 
@@ -23,19 +23,13 @@ class _LoginPageState extends State<LoginPage> {
       _isLoading = true;
     });
 
-    final response = await http.post(
-      Uri.parse('https://your-api-url.com/login'),
-      body: {
-        'email': _emailController.text,
-        'password': _passwordController.text,
-      },
-    );
+    try {
+      UserCredential userCredential =
+          await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: _emailController.text,
+        password: _passwordController.text,
+      );
 
-    setState(() {
-      _isLoading = false;
-    });
-
-    if (response.statusCode == 200) {
       SharedPreferences prefs = await SharedPreferences.getInstance();
       await prefs.setBool('isLoggedIn', true);
       await prefs.setString('email', _emailController.text);
@@ -52,12 +46,12 @@ class _LoginPageState extends State<LoginPage> {
         context,
         MaterialPageRoute(builder: (context) => const HomePage()),
       );
-    } else {
+    } on FirebaseAuthException catch (e) {
       showDialog(
         context: context,
         builder: (context) {
           return AlertDialog(
-            content: const Text('Giriş başarısız!'),
+            content: Text('Giriş başarısız: ${e.message}'),
             actions: [
               TextButton(
                 onPressed: () {
@@ -69,6 +63,68 @@ class _LoginPageState extends State<LoginPage> {
           );
         },
       );
+    } finally {
+      setState(() {
+        _isLoading = false;
+      });
+    }
+  }
+
+  Future<void> _googleSignIn() async {
+    setState(() {
+      _isLoading = true;
+    });
+
+    try {
+      final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+      final GoogleSignInAuthentication? googleAuth =
+          await googleUser?.authentication;
+
+      final AuthCredential credential = GoogleAuthProvider.credential(
+        accessToken: googleAuth?.accessToken,
+        idToken: googleAuth?.idToken,
+      );
+
+      UserCredential userCredential =
+          await FirebaseAuth.instance.signInWithCredential(credential);
+
+      SharedPreferences prefs = await SharedPreferences.getInstance();
+      await prefs.setBool('isLoggedIn', true);
+      await prefs.setString('email', userCredential.user?.email ?? '');
+
+      // Giriş başarılı bildirimi
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: const Text('Giriş başarılı!'),
+          backgroundColor: Colors.green,
+        ),
+      );
+
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const HomePage()),
+      );
+    } on FirebaseAuthException catch (e) {
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            content: Text('Google ile giriş başarısız: ${e.message}'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                child: const Text('Tamam'),
+              ),
+            ],
+          );
+        },
+      );
+    } finally {
+      setState(() {
+        _isLoading = false;
+      });
     }
   }
 
@@ -77,7 +133,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Giriş Yap'),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Color(0xffea4335), // Kırmızı renk
         foregroundColor: Colors.white,
       ),
       body: Padding(
@@ -97,7 +153,7 @@ class _LoginPageState extends State<LoginPage> {
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
-                    color: Colors.deepPurple,
+                    color: Color(0xff34a853), // Yeşil renk
                   ),
                 ),
                 const SizedBox(height: 32),
@@ -105,7 +161,8 @@ class _LoginPageState extends State<LoginPage> {
                   controller: _emailController,
                   decoration: InputDecoration(
                     labelText: 'Email',
-                    prefixIcon: Icon(Icons.email),
+                    prefixIcon: Icon(Icons.email,
+                        color: Color(0xfffabc04)), // Sarı renk
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),
@@ -116,7 +173,8 @@ class _LoginPageState extends State<LoginPage> {
                   controller: _passwordController,
                   decoration: InputDecoration(
                     labelText: 'Şifre',
-                    prefixIcon: Icon(Icons.lock),
+                    prefixIcon:
+                        Icon(Icons.lock, color: Color(0xff4585f0)), // Mavi renk
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),
@@ -127,7 +185,7 @@ class _LoginPageState extends State<LoginPage> {
                 ElevatedButton(
                   onPressed: _isLoading ? null : _login,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.deepPurple,
+                    backgroundColor: Color(0xffea4335), // Kırmızı renk
                     foregroundColor: Colors.white,
                     padding: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
                     shape: RoundedRectangleBorder(
@@ -145,6 +203,39 @@ class _LoginPageState extends State<LoginPage> {
                         )
                       : const Text('Giriş Yap'),
                 ),
+                const SizedBox(height: 16),
+                ElevatedButton(
+                  onPressed: _isLoading ? null : _googleSignIn,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xfffabc04), // Sarı renk
+                    foregroundColor: Colors.white,
+                    padding: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    textStyle: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  child: _isLoading
+                      ? const CircularProgressIndicator(
+                          valueColor:
+                              AlwaysStoppedAnimation<Color>(Colors.white),
+                        )
+                      : Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            SvgPicture.asset(
+                              'assets/icons/google_logo.svg', // Google logosunun yolu
+                              height: 24,
+                              width: 24,
+                            ),
+                            const SizedBox(width: 8),
+                            const Text('Google ile Giriş Yap'),
+                          ],
+                        ),
+                ),
                 TextButton(
                   onPressed: () {
                     Navigator.push(
@@ -156,7 +247,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: const Text(
                     'Hesabınız yok mu? Kayıt Olun',
                     style: TextStyle(
-                      color: Colors.deepPurple,
+                      color: Color(0xff34a853), // Yeşil renk
                       fontWeight: FontWeight.bold,
                     ),
                   ),

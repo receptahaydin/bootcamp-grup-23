@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:bootcamprojeai/pages/add_trip_page.dart';
 import 'package:bootcamprojeai/pages/login_page.dart';
 import 'package:bootcamprojeai/pages/trip_details_page.dart';
+import 'package:bootcamprojeai/pages/profile_page.dart'; // Profil sayfası import
 import 'dart:convert';
 
 class HomePage extends StatefulWidget {
@@ -140,6 +141,15 @@ class _HomePageState extends State<HomePage> {
         title: const Text("Gezilerim"),
         backgroundColor: const Color(0xffea4335),
         actions: [
+          IconButton(
+            icon: const Icon(Icons.account_circle, color: Colors.white),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProfilePage()),
+              );
+            },
+          ),
           IconButton(
             icon: const Icon(Icons.logout, color: Colors.white),
             onPressed: _logout,

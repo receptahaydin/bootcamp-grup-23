@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class ActivitySelectionPage extends StatefulWidget {
   final String city;
   final String startDate;
   final String endDate;
   final String tripType;
-  final String? cityImage; // Şehir resmi için özellik ekleyin
+  final String? cityImage;
   final Map<String, List<String>> activitiesAndPacking;
 
   const ActivitySelectionPage({
@@ -13,7 +15,7 @@ class ActivitySelectionPage extends StatefulWidget {
     required this.startDate,
     required this.endDate,
     required this.tripType,
-    required this.cityImage,
+    this.cityImage,
     required this.activitiesAndPacking,
   });
 
@@ -23,22 +25,41 @@ class ActivitySelectionPage extends StatefulWidget {
 
 class _ActivitySelectionPageState extends State<ActivitySelectionPage>
     with SingleTickerProviderStateMixin {
-  // Mixin ekleyin
   Map<String, List<String>> _selectedActivities = {};
-  late TabController _tabController; // TabController tanımlayın
+  late TabController _tabController;
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final User? user = FirebaseAuth.instance.currentUser;
 
   @override
   void initState() {
     super.initState();
-    _tabController =
-        TabController(length: 1, vsync: this); // TabController başlatın
+    _tabController = TabController(length: 1, vsync: this);
     _selectedActivities = Map.from(widget.activitiesAndPacking);
   }
 
   @override
   void dispose() {
-    _tabController.dispose(); // TabController'ı dispose edin
+    _tabController.dispose();
     super.dispose();
+  }
+
+  Future<void> _saveTripToFirestore() async {
+    if (user != null) {
+      await _firestore.collection('trips').add({
+        'userId': user!.uid,
+        'city': widget.city,
+        'startDate': widget.startDate,
+        'endDate': widget.endDate,
+        'tripType': widget.tripType,
+        'days': DateTime.parse(widget.endDate)
+                .difference(DateTime.parse(widget.startDate))
+                .inDays +
+            1,
+        'selectedActivities': _selectedActivities,
+        'cityImage': widget.cityImage,
+        'createdAt': FieldValue.serverTimestamp(),
+      });
+    }
   }
 
   @override
@@ -48,7 +69,7 @@ class _ActivitySelectionPageState extends State<ActivitySelectionPage>
         title: const Text("Gezi Planı"),
         backgroundColor: Colors.white,
         bottom: TabBar(
-          controller: _tabController, // TabBar'a controller atayın
+          controller: _tabController,
           indicatorColor: Colors.deepPurple,
           tabs: [
             Tab(text: "Valiz"),
@@ -56,7 +77,7 @@ class _ActivitySelectionPageState extends State<ActivitySelectionPage>
         ),
       ),
       body: TabBarView(
-        controller: _tabController, // TabBarView'a controller atayın
+        controller: _tabController,
         children: [
           _buildPackingList(widget.activitiesAndPacking),
         ],
@@ -64,22 +85,20 @@ class _ActivitySelectionPageState extends State<ActivitySelectionPage>
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(
-              context,
-              {
-                'city': widget.city,
-                'startDate': widget.startDate,
-                'endDate': widget.endDate,
-                'tripType': widget.tripType,
-                'days': DateTime.parse(widget.endDate)
-                        .difference(DateTime.parse(widget.startDate))
-                        .inDays +
-                    1,
-                'selectedActivities': _selectedActivities,
-                'cityImage': widget.cityImage,
-              },
-            );
+          onPressed: () async {
+            await _saveTripToFirestore();
+            Navigator.pop(context, {
+              'city': widget.city,
+              'startDate': widget.startDate,
+              'endDate': widget.endDate,
+              'tripType': widget.tripType,
+              'days': DateTime.parse(widget.endDate)
+                      .difference(DateTime.parse(widget.startDate))
+                      .inDays +
+                  1,
+              'selectedActivities': _selectedActivities,
+              'cityImage': widget.cityImage,
+            });
           },
           child: const Text(
             "Gezi Oluştur",
@@ -106,7 +125,6 @@ class _ActivitySelectionPageState extends State<ActivitySelectionPage>
           final items =
               entry.value.where((item) => item.trim().isNotEmpty).toList();
 
-          // Boş kategorileri gizleme
           if (items.isEmpty) {
             return SizedBox.shrink();
           }

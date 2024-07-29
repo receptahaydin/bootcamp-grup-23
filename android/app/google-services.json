@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "336794678098",
+    "project_id": "bootcamprojeai",
+    "storage_bucket": "bootcamprojeai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336794678098:android:f41e28b15e050bed91808b",
+        "android_client_info": {
+          "package_name": "com.example.bootcamprojeai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336794678098-h1mdk0nnp9ggqc1k72c4eba6vfpttpgi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bootcamprojeai",
+            "certificate_hash": "9216142daa837026c9edbff43b82845f6f061309"
+          }
+        },
+        {
+          "client_id": "336794678098-bek4po2147is5flkbobc4m1ts3abmi03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFIOM1g1annWpzmVWOSgs9K9bAwEp4NjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336794678098-bek4po2147is5flkbobc4m1ts3abmi03.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "336794678098-tkficuaovgp90rt3lpvv4tqqbe6klufp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.bootcamprojeai"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

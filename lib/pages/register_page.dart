@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+import 'package:firebase_auth/firebase_auth.dart'; // Firebase Auth import
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -18,19 +18,13 @@ class _RegisterPageState extends State<RegisterPage> {
       _isLoading = true;
     });
 
-    final response = await http.post(
-      Uri.parse('https://your-api-url.com/register'),
-      body: {
-        'email': _emailController.text,
-        'password': _passwordController.text,
-      },
-    );
+    try {
+      UserCredential userCredential =
+          await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: _emailController.text,
+        password: _passwordController.text,
+      );
 
-    setState(() {
-      _isLoading = false;
-    });
-
-    if (response.statusCode == 200) {
       // Kayıt başarılı bildirimi
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -39,12 +33,12 @@ class _RegisterPageState extends State<RegisterPage> {
         ),
       );
       Navigator.pop(context);
-    } else {
+    } on FirebaseAuthException catch (e) {
       showDialog(
         context: context,
         builder: (context) {
           return AlertDialog(
-            content: const Text('Kayıt başarısız!'),
+            content: Text('Kayıt başarısız: ${e.message}'),
             actions: [
               TextButton(
                 onPressed: () {
@@ -56,6 +50,10 @@ class _RegisterPageState extends State<RegisterPage> {
           );
         },
       );
+    } finally {
+      setState(() {
+        _isLoading = false;
+      });
     }
   }
 

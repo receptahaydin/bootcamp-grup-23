@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class TripDetailsPage extends StatefulWidget {
   final Map<String, dynamic> trip;
@@ -12,14 +14,24 @@ class TripDetailsPage extends StatefulWidget {
 class _TripDetailsPageState extends State<TripDetailsPage> {
   bool _isEditing = false;
   Map<String, List<String>> _selectedActivities = {};
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final User? user = FirebaseAuth.instance.currentUser;
 
   @override
   void initState() {
     super.initState();
-    // Başlangıçta tüm aktiviteleri boş liste olarak başlat
     widget.trip['selectedActivities'].forEach((category, items) {
-      _selectedActivities[category] = [];
+      _selectedActivities[category] = List<String>.from(items);
     });
+  }
+
+  Future<void> _updateTripInFirestore() async {
+    if (user != null) {
+      await _firestore.collection('trips').doc(widget.trip['tripId']).update({
+        'selectedActivities': _selectedActivities,
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
+    }
   }
 
   @override
@@ -31,11 +43,10 @@ class _TripDetailsPageState extends State<TripDetailsPage> {
         actions: [
           IconButton(
             icon: Icon(_isEditing ? Icons.save : Icons.edit),
-            onPressed: () {
+            onPressed: () async {
               setState(() {
                 if (_isEditing) {
-                  // Kaydetme işlemleri buraya eklenebilir
-                  // Örneğin: Değiştirilen verileri bir veritabanına veya API'ye kaydedin.
+                  _updateTripInFirestore();
                 }
                 _isEditing = !_isEditing;
               });
