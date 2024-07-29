@@ -5,6 +5,7 @@ class ActivitySelectionPage extends StatefulWidget {
   final String startDate;
   final String endDate;
   final String tripType;
+  final String? cityImage; // Şehir resmi için özellik ekleyin
   final Map<String, List<String>> activitiesAndPacking;
 
   const ActivitySelectionPage({
@@ -12,6 +13,7 @@ class ActivitySelectionPage extends StatefulWidget {
     required this.startDate,
     required this.endDate,
     required this.tripType,
+    required this.cityImage,
     required this.activitiesAndPacking,
   });
 
@@ -75,6 +77,7 @@ class _ActivitySelectionPageState extends State<ActivitySelectionPage>
                         .inDays +
                     1,
                 'selectedActivities': _selectedActivities,
+                'cityImage': widget.cityImage,
               },
             );
           },

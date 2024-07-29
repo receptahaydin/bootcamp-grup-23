@@ -619,6 +619,9 @@ class _AddTripPageState extends State<AddTripPage> {
         _isLoading = false;
       });
 
+      // Seçilen şehrin resmini al
+      String? cityImageUrl = _cityImages[_selectedCity]?[0]['url'];
+
       Navigator.push(
         context,
         MaterialPageRoute(
@@ -628,7 +631,8 @@ class _AddTripPageState extends State<AddTripPage> {
                 DateFormat('yyyy-MM-dd').format(_selectedDateRange!.start),
             endDate: DateFormat('yyyy-MM-dd').format(_selectedDateRange!.end),
             tripType: _tripType,
-            activitiesAndPacking: packingList, // Artık sadece valiz listesi
+            activitiesAndPacking: packingList,
+            cityImage: cityImageUrl, // Resmi ActivitySelectionPage'e gönder
           ),
         ),
       ).then((result) {
@@ -689,37 +693,38 @@ class _AddTripPageState extends State<AddTripPage> {
     if (_cityImages.containsKey(_selectedCity)) {
       return Stack(
         alignment: Alignment.bottomCenter,
-        children: _cityImages[_selectedCity]!.map((imageData) {
-          return Stack(
-            alignment: Alignment.bottomCenter,
-            children: [
-              Image.network(imageData['url']!),
-              Positioned(
-                bottom: 0,
-                left: 0,
-                right: 0,
-                child: Container(
-                  color: Colors.black54,
-                  padding: EdgeInsets.all(8.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      BoxedIcon(_weatherIcon, size: 48, color: Colors.white),
-                      SizedBox(width: 10),
-                      Text(
-                        '$_weatherInfo',
-                        style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      ),
-                    ],
-                  ),
-                ),
+        children: [
+          // Şehir Resmi
+          ..._cityImages[_selectedCity]!.map((imageData) {
+            return Image.network(imageData['url']!);
+          }).toList(),
+          // Hava Durumu Bilgisi
+          Positioned(
+            bottom: 16.0, // Altta boşluk
+            left: 16.0, // Soldan boşluk
+            child: Container(
+              padding: EdgeInsets.all(8.0),
+              decoration: BoxDecoration(
+                color: Colors.black54,
+                borderRadius: BorderRadius.circular(8.0),
               ),
-            ],
-          );
-        }).toList(),
+              child: Row(
+                children: [
+                  BoxedIcon(_weatherIcon, size: 32, color: Colors.white),
+                  SizedBox(width: 8.0),
+                  Text(
+                    '$_weatherInfo',
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
       );
     } else {
       return Container();

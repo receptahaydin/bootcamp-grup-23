@@ -1,16 +1,47 @@
 import 'package:flutter/material.dart';
 
-class TripDetailsPage extends StatelessWidget {
+class TripDetailsPage extends StatefulWidget {
   final Map<String, dynamic> trip;
 
   const TripDetailsPage({super.key, required this.trip});
 
   @override
+  State<TripDetailsPage> createState() => _TripDetailsPageState();
+}
+
+class _TripDetailsPageState extends State<TripDetailsPage> {
+  bool _isEditing = false;
+  Map<String, List<String>> _selectedActivities = {};
+
+  @override
+  void initState() {
+    super.initState();
+    // Başlangıçta tüm aktiviteleri boş liste olarak başlat
+    widget.trip['selectedActivities'].forEach((category, items) {
+      _selectedActivities[category] = [];
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(trip['city']),
-        backgroundColor: Color(0xffea4335), // Google Kırmızısı
+        title: Text(widget.trip['city']),
+        backgroundColor: const Color(0xffea4335),
+        actions: [
+          IconButton(
+            icon: Icon(_isEditing ? Icons.save : Icons.edit),
+            onPressed: () {
+              setState(() {
+                if (_isEditing) {
+                  // Kaydetme işlemleri buraya eklenebilir
+                  // Örneğin: Değiştirilen verileri bir veritabanına veya API'ye kaydedin.
+                }
+                _isEditing = !_isEditing;
+              });
+            },
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -18,23 +49,29 @@ class TripDetailsPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              if (trip['cityImage'] != null)
-                ClipRRect(
-                  // Yuvarlatılmış köşeler için
-                  borderRadius: BorderRadius.circular(12),
-                  child: Image.network(trip['cityImage']!),
+              if (widget.trip['cityImage'] != null)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 20.0),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(12),
+                    child: Image.network(
+                      widget.trip['cityImage'],
+                      width: double.infinity,
+                      height: 200,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
-              SizedBox(height: 20),
               Text(
-                "${trip['startDate']} - ${trip['endDate']} (${trip['days']} gün, ${trip['tripType']})",
-                style: TextStyle(
+                "${widget.trip['startDate']} - ${widget.trip['endDate']} (${widget.trip['days']} gün, ${widget.trip['tripType']})",
+                style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
-                  color: Color(0xff4285f4), // Google Mavisi
+                  color: Color(0xff4285f4),
                 ),
               ),
-              SizedBox(height: 24),
-              ..._buildPackingList(trip['selectedActivities']),
+              const SizedBox(height: 24),
+              _buildPackingList(widget.trip['selectedActivities']),
             ],
           ),
         ),
@@ -42,34 +79,68 @@ class TripDetailsPage extends StatelessWidget {
     );
   }
 
-  List<Widget> _buildPackingList(Map<String, List<String>> packingList) {
-    List<Widget> widgets = [];
-
-    packingList.forEach((category, items) {
-      widgets.add(
-        Padding(
-          padding: const EdgeInsets.only(bottom: 8.0),
-          child: Text(
-            category,
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              color: Color(0xff34a853), // Google Yeşili
-            ),
-          ),
-        ),
-      );
-      widgets.addAll(
-        items.map((item) => Padding(
-              padding: const EdgeInsets.only(left: 16.0, bottom: 4.0),
+  Widget _buildPackingList(Map<String, List<String>> packingList) {
+    return Column(
+      children: packingList.entries.map((entry) {
+        final category = entry.key;
+        final items = entry.value;
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8.0),
               child: Text(
-                '- $item',
-                style: TextStyle(fontSize: 16),
+                category,
+                style: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xff34a853),
+                ),
               ),
-            )),
-      );
-    });
-
-    return widgets;
+            ),
+            Column(
+              children: items.map((item) {
+                final isSelected =
+                    _selectedActivities[category]?.contains(item) ?? false;
+                return _isEditing
+                    ? CheckboxListTile(
+                        title: Text(
+                          item,
+                          style: TextStyle(
+                            decoration: isSelected
+                                ? TextDecoration.lineThrough
+                                : TextDecoration.none,
+                          ),
+                        ),
+                        value: isSelected,
+                        onChanged: (bool? value) {
+                          setState(() {
+                            if (value == true) {
+                              _selectedActivities[category]!.add(item);
+                            } else {
+                              _selectedActivities[category]!.remove(item);
+                            }
+                          });
+                        },
+                        secondary: isSelected
+                            ? const Icon(
+                                Icons.check,
+                                color: Colors.green,
+                              )
+                            : null,
+                      )
+                    : Padding(
+                        padding: const EdgeInsets.only(left: 16.0, bottom: 4.0),
+                        child: Text(
+                          '- $item',
+                          style: const TextStyle(fontSize: 16),
+                        ),
+                      );
+              }).toList(),
+            ),
+          ],
+        );
+      }).toList(),
+    );
   }
 }
