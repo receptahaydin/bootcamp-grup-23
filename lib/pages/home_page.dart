@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:bootcamprojeai/pages/add_trip_page.dart';
-import 'package:bootcamprojeai/pages/login_page.dart';
-import 'package:bootcamprojeai/pages/trip_details_page.dart';
-import 'package:bootcamprojeai/pages/profile_page.dart'; // Profil sayfası import
+import 'package:Bavul/pages/add_trip_page.dart';
+import 'package:Bavul/pages/login_page.dart';
+import 'package:Bavul/pages/trip_details_page.dart';
+import 'package:Bavul/pages/profile_page.dart'; // Profil sayfası import
 import 'dart:convert';
 
 class HomePage extends StatefulWidget {

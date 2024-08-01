@@ -45,8 +45,11 @@ class _ActivitySelectionPageState extends State<ActivitySelectionPage>
 
   Future<void> _saveTripToFirestore() async {
     if (user != null) {
-      await _firestore.collection('trips').add({
-        'userId': user!.uid,
+      await _firestore
+          .collection('users')
+          .doc(user!.uid)
+          .collection('trips')
+          .add({
         'city': widget.city,
         'startDate': widget.startDate,
         'endDate': widget.endDate,

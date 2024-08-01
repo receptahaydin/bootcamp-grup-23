@@ -4,22 +4,27 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:google_generative_ai/google_generative_ai.dart';
 import 'package:weather_icons/weather_icons.dart';
-import 'package:bootcamprojeai/pages/activity_selection_page.dart';
+import 'package:Bavul/pages/activity_selection_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:gif/gif.dart'; // gif paketi eklendi
 
 class AddTripPage extends StatefulWidget {
   @override
   _AddTripPageState createState() => _AddTripPageState();
 }
 
-class _AddTripPageState extends State<AddTripPage> {
+class _AddTripPageState extends State<AddTripPage>
+    with SingleTickerProviderStateMixin {
+  // SingleTickerProviderStateMixin eklendi
   List<String> _cities = [];
   String _selectedCity = '';
   DateTimeRange? _selectedDateRange;
   String _tripType = 'Tatil';
   int _days = 0;
   bool _isLoading = false;
+  late GifController _gifController; // GifController eklendi
+  OverlayEntry? _loadingOverlayEntry;
   String _weatherInfo = "";
   IconData _weatherIcon = Icons.wb_sunny;
   final User? user = FirebaseAuth.instance.currentUser;
@@ -520,6 +525,53 @@ class _AddTripPageState extends State<AddTripPage> {
   void initState() {
     super.initState();
     _fetchCities();
+    _gifController = GifController(vsync: this); // GifController başlatıldı
+  }
+
+  @override
+  void dispose() {
+    _gifController.dispose(); // GifController dispose edildi
+    super.dispose();
+  }
+
+  void _showLoadingOverlay() {
+    OverlayState? overlayState = Overlay.of(context);
+    if (overlayState != null) {
+      _loadingOverlayEntry = OverlayEntry(
+        builder: (context) => Positioned.fill(
+          child: Container(
+            color: Colors.black.withOpacity(0.5),
+            child: Center(
+              child: Gif(
+                image: AssetImage("assets/animations/loading.gif"),
+                controller: _gifController,
+                autostart: Autostart.loop,
+                onFetchCompleted: () {
+                  _gifController.reset();
+                  _gifController.forward();
+                },
+              ),
+            ),
+          ),
+        ),
+      );
+
+      overlayState.insert(_loadingOverlayEntry!);
+      print("Overlay inserted");
+    } else {
+      print("OverlayState not found");
+    }
+  }
+
+  void _removeLoadingOverlay() {
+    if (_loadingOverlayEntry != null) {
+      print("Attempting to remove overlay");
+      _loadingOverlayEntry?.remove();
+      _loadingOverlayEntry = null;
+      print("Overlay removed");
+    } else {
+      print("Overlay entry was null when trying to remove");
+    }
   }
 
   Future<void> _fetchCities() async {
@@ -557,17 +609,17 @@ class _AddTripPageState extends State<AddTripPage> {
         '${_days} günlük bir seyahat için hazırlamam gereken bir valiz listesi ve önemli bilgilendirmeler oluşturun. \n\n'
         '**Bavul:**\n\n'
         'Lütfen aşağıdaki kategorilere göre detaylı bir valiz listesi hazırlayın: \n\n'
-        '**Giysiler:** \n'
+        '**👚Giysiler:** \n'
         '- Seyahat tarihlerimdeki hava durumunu göz önünde bulundurarak (günlük ortalama sıcaklık, yağış olasılığı vb.) yeterli miktarda ve çeşitte giysi önerin. \n'
         '- Gündüz ve gece aktiviteleri için farklı giysi seçenekleri sunun. \n'
         '- Örneğin, tişört, pantolon, şort, elbise, ceket, iç çamaşırı, çorap vb. belirtebilirsiniz. \n\n'
-        '**Ayakkabılar:** \n'
+        '**👟Ayakkabılar:** \n'
         '- Yapacağım aktivitelere uygun (yürüyüş, gezi, spor vb.) farklı ayakkabı türleri önerin. \n'
         '- Örneğin, spor ayakkabı, yürüyüş ayakkabısı, sandalet, terlik vb. belirtebilirsiniz. \n\n'
-        '**Elektronik:** \n'
+        '**💻Elektronik:** \n'
         '- Seyahatim sırasında ihtiyaç duyabileceğim elektronik eşyaları listeleyin. \n'
         '- Örneğin, telefon, şarj aleti, powerbank, kulaklık, fotoğraf makinesi vb. belirtebilirsiniz. \n\n'
-        '**Kişisel Bakım:** \n'
+        '**🪥Kişisel Bakım:** \n'
         '- Seyahatim boyunca kullanacağım kişisel bakım ürünlerini listeleyin. \n'
         '- Örneğin, diş fırçası, diş macunu, şampuan, saç kremi, duş jeli, güneş kremi, deodorant vb. belirtebilirsiniz. \n\n'
         '**Diğer:** \n'
@@ -608,44 +660,60 @@ class _AddTripPageState extends State<AddTripPage> {
 
   void _navigateToActivitySelection() async {
     if (_selectedCity.isNotEmpty && _selectedDateRange != null) {
+      _showLoadingOverlay(); // Show the loading GIF overlay
+
       setState(() {
         _isLoading = true;
       });
 
-      final packingList = await _generatePackingList();
+      try {
+        // Generate the packing list using the AI model
+        final packingList = await _generatePackingList();
 
-      setState(() {
-        _isLoading = false;
-      });
+        // Immediately remove the overlay after the AI response is generated
+        _removeLoadingOverlay();
 
-      String? cityImageUrl = _cityImages[_selectedCity]?[0]['url'];
+        setState(() {
+          _isLoading = false;
+        });
 
-      final result = await Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => ActivitySelectionPage(
-            city: _selectedCity,
-            startDate:
-                DateFormat('yyyy-MM-dd').format(_selectedDateRange!.start),
-            endDate: DateFormat('yyyy-MM-dd').format(_selectedDateRange!.end),
-            tripType: _tripType,
-            activitiesAndPacking: packingList,
-            cityImage: cityImageUrl,
+        String? cityImageUrl = _cityImages[_selectedCity]?[0]['url'];
+
+        // Proceed to navigate to the ActivitySelectionPage with the results
+        final result = await Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ActivitySelectionPage(
+              city: _selectedCity,
+              startDate:
+                  DateFormat('yyyy-MM-dd').format(_selectedDateRange!.start),
+              endDate: DateFormat('yyyy-MM-dd').format(_selectedDateRange!.end),
+              tripType: _tripType,
+              activitiesAndPacking: packingList,
+              cityImage: cityImageUrl,
+            ),
           ),
-        ),
-      );
+        );
 
-      if (result != null) {
-        await _saveTripToFirestore(result);
-        Navigator.pop(context, result);
+        // Optionally handle the result after returning from the ActivitySelectionPage
+        if (result != null) {
+          await _saveTripToFirestore(result);
+          Navigator.pop(context, result);
+        }
+      } catch (e) {
+        print("Error during navigation or AI response generation: $e");
+        _removeLoadingOverlay(); // Ensure overlay is removed even if an error occurs
       }
     }
   }
 
   Future<void> _saveTripToFirestore(Map<String, dynamic> tripData) async {
     if (user != null) {
-      await _firestore.collection('trips').add({
-        'userId': user!.uid,
+      await _firestore
+          .collection('users')
+          .doc(user!.uid)
+          .collection('trips')
+          .add({
         'city': tripData['city'],
         'startDate': tripData['startDate'],
         'endDate': tripData['endDate'],

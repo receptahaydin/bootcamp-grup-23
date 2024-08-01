@@ -1,4 +1,4 @@
-name: bootcamprojeai
+name: Bavul
 description: "A new Flutter project."
 publish_to: 'none'
 version: 1.0.0+1
@@ -21,6 +21,9 @@ dependencies:
   google_sign_in: ^6.1.5
   flutter_svg: ^0.22.0
   cloud_firestore: ^4.7.0
+  image_picker: ^1.1.2
+  firebase_storage: ^11.7.7
+  gif: ^2.3.0
 
 dev_dependencies:
   flutter_test:
@@ -40,3 +43,8 @@ flutter:
     - assets/images/login_image.png
     - assets/icons/google_logo.svg
     - assets/icon/app_icon.png
+    - assets/images/bg.png
+    - assets/animations/loading.gif
+    - assets/icons/google_logo.png
+
+    
