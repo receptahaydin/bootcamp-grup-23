@@ -426,7 +426,7 @@ Sprint Review Katılımcıları:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renk Paleti</title>
+    <title>Color Palette</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -447,7 +447,6 @@ Sprint Review Katılımcıları:
             border-radius: 50%;
             display: inline-block;
             margin-right: 10px;
-            vertical-align: middle;
         }
     </style>
 </head>
