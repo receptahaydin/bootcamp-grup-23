@@ -345,15 +345,17 @@ Sprint Review Katılımcıları:
     <summary><h3>WhatsApp Ekran Görüntüleri</h3></summary>
   <table style="width: 100%;">
     <tr>
-        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/cce9f41e-c1cf-408a-8054-145dac996c42" style="max-width: 100%; height: auto;"></td>
-        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/ea4e9acc-93f6-403a-ba6f-8bc25f6967e9" style="max-width: 100%; height: auto;"></td>
-        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/21297e9b-ca01-4037-9c52-a074960514e6" style="max-width: 100%; height: auto;"></td>
-        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/cf3735d1-129f-442d-a8ac-131d93624ff7" style="max-width: 100%; height: auto;"></td>
-        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/c68b6900-5b5f-4b9d-a88b-ab002392c3b7" style="max-width: 100%; height: auto;"></td>
-        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/fc5c503a-5ed5-4ebb-b79e-56681df712a2" style="max-width: 100%; height: auto;"></td>
+        <td style="width: 33.33%;"><img src="https://github.com/user-attachments/assets/fc5c503a-5ed5-4ebb-b79e-56681df712a2" style="max-width: 100%; height: auto;"></td>
+        <td style="width: 33.33%;"><img src="https://github.com/user-attachments/assets/ea4e9acc-93f6-403a-ba6f-8bc25f6967e9" style="max-width: 100%; height: auto;"></td>
+        <td style="width: 33.33%;"><img src="https://github.com/user-attachments/assets/21297e9b-ca01-4037-9c52-a074960514e6" style="max-width: 100%; height: auto;"></td>
+    </tr>
+    <tr>
+        <td style="width: 33.33%;"><img src="https://github.com/user-attachments/assets/cf3735d1-129f-442d-a8ac-131d93624ff7" style="max-width: 100%; height: auto;"></td>
+        <td style="width: 33.33%;"><img src="https://github.com/user-attachments/assets/c68b6900-5b5f-4b9d-a88b-ab002392c3b7" style="max-width: 100%; height: auto;"></td>
+        <td style="width: 33.33%;"><img src="https://github.com/user-attachments/assets/cce9f41e-c1cf-408a-8054-145dac996c42" style="max-width: 100%; height: auto;"></td>
     </tr>
   </table>
-  </details>
+</details>
 
 <details>
     <summary><h3>Sprint 2 - Ürün Ekran Görüntüleri</h3></summary>
