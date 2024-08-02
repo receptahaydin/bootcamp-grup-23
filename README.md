@@ -323,3 +323,127 @@ Sprint Review Katılımcıları:
 - Uygulamanın renk paletleri tekrardan değerlendirildi ve gözü yorması açısından ara renkler kaldırıldı.
 
 - Gemini AI kullanıcıya gideceği yer ve tarih ile alakalı önemli bilgilendirmeler sağlayacak şekilde yapılandırılacaktır.
+
+# Sprint 3
+
+- Sprint Notları: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+
+- Sprint boyunca tamamlanması öngörülen puan: 40 Puan
+
+- Puan belirleme yöntemi: Toplamda proje süresince tamamlanması gereken 100 puanlık bir backlog bulunmaktadır. Bu nedenle, 3 sprint'e bölündüğünde, son üçüncü sprint'in 40 puan ile başlaması gerektiği kararlaştırıldı. İlk ve ikinci sprint sonucunda ulaşılan 60 puan, üçüncü sprint ile 100 puana ulaşarak tamamlanmıştır.
+
+- Daily Scrum: Daily Scrum toplantıları WhatsApp üzerinden kararlaştırılıp WhatsApp üzerinden gerçekleştirilmiştir. Daily Scrum toplantısı örneği jpeg formatında Readme'de paylaşılmıştır.
+
+## Toplantı Ekran Görüntüleri
+
+![Ekran görüntüsü 2024-07-21 222436](https://github.com/user-attachments/assets/7d50d676-18a2-45cd-a510-71c50707f49f)
+![Ekran görüntüsü 2024-07-21 222505](https://github.com/user-attachments/assets/3d273abf-ce68-49c2-8533-e79207130e8d)
+![Ekran_Goruntusu_157](https://github.com/user-attachments/assets/1e1ca8ff-74b0-438a-9ae8-a2544b40b1a2)
+![Ekran_goruntusu_2024-07-18_234046](https://github.com/user-attachments/assets/49099ece-ffd8-4926-a4f7-65913c4e9040)
+
+<details>
+    <summary><h3>WhatsApp Ekran Görüntüleri</h3></summary>
+  <table style="width: 100%;">
+    <tr>
+        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/cce9f41e-c1cf-408a-8054-145dac996c42" style="max-width: 100%; height: auto;"></td>
+        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/ea4e9acc-93f6-403a-ba6f-8bc25f6967e9" style="max-width: 100%; height: auto;"></td>
+        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/21297e9b-ca01-4037-9c52-a074960514e6" style="max-width: 100%; height: auto;"></td>
+        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/cf3735d1-129f-442d-a8ac-131d93624ff7" style="max-width: 100%; height: auto;"></td>
+        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/c68b6900-5b5f-4b9d-a88b-ab002392c3b7" style="max-width: 100%; height: auto;"></td>
+        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/fc5c503a-5ed5-4ebb-b79e-56681df712a2" style="max-width: 100%; height: auto;"></td>
+    </tr>
+  </table>
+  </details>
+
+<details>
+    <summary><h3>Sprint 2 - Ürün Ekran Görüntüleri</h3></summary>
+  <table style="width: 100%;">
+      <tr>
+      <td colspan="4" style="text-align: center;"><h2>Intro</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/8b420386-49ac-4711-9ea6-0cd7ad085dc3" style="max-width: 100%; height: auto;"></td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Yeni Gezi Oluşturma - 1</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/dd59f4fc-2956-4a44-a74c-ad218cd2e0a0" style="max-width: 100%; height: auto;"></td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Yapay Zeka Çıktıları - 1</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/68748daa-2fb0-424d-af5f-23faf120bdc0" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/057e7e7d-0530-4036-a928-4f2f7e8f47af" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/05806311-555e-4091-9fb9-b83f209b9968" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/1178af64-6598-44b4-a1fd-25d4dbf1f6f2" style="max-width: 100%; height: auto;"></td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Yeni Gezi Oluşturma - 2</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/ddaa2daa-5f08-4891-a3e6-069444fb694e" style="max-width: 100%; height: auto;"></td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Yapay Zeka Çıktıları - 2</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/575d2a47-ea4b-4e42-82b2-a58a302e4198" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/d9c354a1-3bf2-4b8c-b3a3-2ff898ec05c7" style="max-width: 100%; height: auto;"></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/c06de477-9aff-4523-b44a-350cea137ab5" style="max-width: 100%; height: auto;"></td>
+    </tr>
+    <tr>
+      <td colspan="4" style="text-align: center;"><h2>Oluşturulan Geziler</h2></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/8988e983-b743-471f-a3f6-791ff45611c3" style="max-width: 100%; height: auto;"></td>
+    </tr>
+  </table>
+  </details>
+
+<details>
+    <summary><h3>Sprint 2 - Ürün Lansmanı</h3></summary>
+  <table style="width: 100%;">
+    <tr>
+        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/f661efa2-d17c-46ee-a25b-fd2fd336c294" style="max-width: 100%; height: auto;"></td>
+        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/64d1aa07-5619-4608-a42e-6a25126eb04d" style="max-width: 100%; height: auto;"></td>
+    </tr>
+  </table>
+  </details>
+
+<details>
+    <summary><h3>Sprint 2 - Kalite Yönetim Planı</h3></summary>
+    <table style="width: 100%;">
+        <tr>
+            <td>Kalite yönetim planına <a href="https://github.com/user-attachments/files/16325761/Bootcamp24.F23.pdf" target="_blank">buradan ulaşabilirsiniz</a>.</td>
+        </tr>
+    </table>
+</details>
+
+## Sprint Review
+### Alınan Kararlar
+
+Uygulama İçinde Seçilen Seyahat Rotasını Temsil Eden Görsel: Manuel ekleme yerine API entegrasyonu ile yapılması kararlaştırıldı.
+
+Hava Durumu Entegrasyonu: API entegrasyonu ile kullanıcıların seyahat edeceği tarih ve lokasyon için hava durumu entegrasyonu sağlandı.
+
+Hesap Oluşturma Çalışmaları: UI tasarımıyla birlikte yapılması kararlaştırıldı.
+
+Kullanıcı Seyahat Kayıtları: Kullanıcıların yaptığı seyahatlerin kaydedilmesinin, ihtiyaç listesinin ardından yapılması kararı alındı. Ayrıca burada Firebase kullanılacaktır.
+
+Kalite Yönetim Planı: Kalite yönetim planı çerçevesinde ilerlemek için bir plan oluşturuldu.
+
+Sprint Review Katılımcıları:
+- Recep Taha Aydın
+- Melike Yiğenoğlu
+- Muhammed Talha Peri
+- Oğuzhan Gençaslan
+- Naime Yöndem
+  
+## Sprint Retrospective
+- Instagram için alternatif post önerileri gerekli seviyeye ulaştığı için görev dağılımı tekrardan gözden geçirildi ve UI kısmına ağırlık verilmesi gerektiğine karar verildi.
+
+- Uygulamanın renk paletleri tekrardan değerlendirildi ve gözü yorması açısından ara renkler kaldırıldı.
+
+- Gemini AI kullanıcıya gideceği yer ve tarih ile alakalı önemli bilgilendirmeler sağlayacak şekilde yapılandırılacaktır.
