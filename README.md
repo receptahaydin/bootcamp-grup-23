@@ -402,48 +402,20 @@ Sprint Review Katılımcıları:
   </table>
   </details>
 
-<details>
-    <summary><h3>Sprint 2 - Ürün Lansmanı</h3></summary>
-  <table style="width: 100%;">
-    <tr>
-        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/f661efa2-d17c-46ee-a25b-fd2fd336c294" style="max-width: 100%; height: auto;"></td>
-        <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/64d1aa07-5619-4608-a42e-6a25126eb04d" style="max-width: 100%; height: auto;"></td>
-    </tr>
-  </table>
-  </details>
-
-<details>
-    <summary><h3>Sprint 2 - Kalite Yönetim Planı</h3></summary>
-    <table style="width: 100%;">
-        <tr>
-            <td>Kalite yönetim planına <a href="https://github.com/user-attachments/files/16325761/Bootcamp24.F23.pdf" target="_blank">buradan ulaşabilirsiniz</a>.</td>
-        </tr>
-    </table>
-</details>
-
 ## Sprint Review
-### Alınan Kararlar
 
-Uygulama İçinde Seçilen Seyahat Rotasını Temsil Eden Görsel: Manuel ekleme yerine API entegrasyonu ile yapılması kararlaştırıldı.
-
-Hava Durumu Entegrasyonu: API entegrasyonu ile kullanıcıların seyahat edeceği tarih ve lokasyon için hava durumu entegrasyonu sağlandı.
-
-Hesap Oluşturma Çalışmaları: UI tasarımıyla birlikte yapılması kararlaştırıldı.
-
-Kullanıcı Seyahat Kayıtları: Kullanıcıların yaptığı seyahatlerin kaydedilmesinin, ihtiyaç listesinin ardından yapılması kararı alındı. Ayrıca burada Firebase kullanılacaktır.
-
-Kalite Yönetim Planı: Kalite yönetim planı çerçevesinde ilerlemek için bir plan oluşturuldu.
+- Ekip ruhunu koruyup proje boyunca özveriyle çalışıldığı için kalan ekip üyeleri birbirini tebrik etti.
+- Gemini AI ile Seyahat yeri ve tarihine göre bavul listesi ihtiyaçları listelenmesi başarıyla eklendi.
+- Gemini AI ile kullanıcıya gideceği yer ve tarih ile alakalı önemli bilgilendirmeler verilmesi başarıyla eklenmiştir.
+- Google Firebase ile kullanıcıların yaptığı seyahatlerin kayıt edilmesi başarıyla eklenmiştir. Bu sayede kullanıcı gezeceği yerlere önceden hazırlıklı gidebilir ve kaydettiği yerlere daha sonra da erişebilir.
+- Tamamlanması gereken 100 puanlık backlog puanı tamamlanmıştır.
 
 Sprint Review Katılımcıları:
 - Recep Taha Aydın
 - Melike Yiğenoğlu
 - Muhammed Talha Peri
 - Oğuzhan Gençaslan
-- Naime Yöndem
   
 ## Sprint Retrospective
-- Instagram için alternatif post önerileri gerekli seviyeye ulaştığı için görev dağılımı tekrardan gözden geçirildi ve UI kısmına ağırlık verilmesi gerektiğine karar verildi.
-
-- Uygulamanın renk paletleri tekrardan değerlendirildi ve gözü yorması açısından ara renkler kaldırıldı.
-
-- Gemini AI kullanıcıya gideceği yer ve tarih ile alakalı önemli bilgilendirmeler sağlayacak şekilde yapılandırılacaktır.
+- Sprint 1 ve Sprint 2'de katılım gösteren takım üyesi Naime Yöndem ekipten ayrılma kararı almıştır. 
+- Kalan takım üyeleriyle gelecek projelerde iletişim halinde kalınması konuşulmuştur. 
