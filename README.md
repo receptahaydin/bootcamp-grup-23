@@ -336,10 +336,8 @@ Sprint Review Katılımcıları:
 
 ## Toplantı Ekran Görüntüleri
 
-![Ekran görüntüsü 2024-07-21 222436](https://github.com/user-attachments/assets/7d50d676-18a2-45cd-a510-71c50707f49f)
-![Ekran görüntüsü 2024-07-21 222505](https://github.com/user-attachments/assets/3d273abf-ce68-49c2-8533-e79207130e8d)
-![Ekran_Goruntusu_157](https://github.com/user-attachments/assets/1e1ca8ff-74b0-438a-9ae8-a2544b40b1a2)
-![Ekran_goruntusu_2024-07-18_234046](https://github.com/user-attachments/assets/49099ece-ffd8-4926-a4f7-65913c4e9040)
+<img width="853" alt="Screenshot 2024-08-02 at 12 14 54" src="https://github.com/user-attachments/assets/82fb05ee-9799-4d76-91db-ceef768e6454">
+<img width="858" alt="Screenshot 2024-08-02 at 12 15 27" src="https://github.com/user-attachments/assets/3703e52d-487d-44f5-b552-78f5581c9ef7">
 
 <details>
     <summary><h3>WhatsApp Ekran Görüntüleri</h3></summary>
