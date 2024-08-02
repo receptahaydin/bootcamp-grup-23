@@ -345,7 +345,7 @@ Sprint Review Katılımcıları:
 </details>
 
 <details>
-    <summary><h3>Sprint 2 - Ürün Ekran Görüntüleri</h3></summary>
+    <summary><h3>Sprint 3 - Ürün Ekran Görüntüleri</h3></summary>
   <table style="width: 100%;">
       <tr>
       <td colspan="4" style="text-align: center;"><h2>Intro</h2></td>
