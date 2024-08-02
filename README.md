@@ -70,18 +70,7 @@ Flutter 23
       </a>
     </td>
   </tr>
-  <tr>
-    <td align="center"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/49415597/5743f68c-377d-4094-8e8e-55fd5e310032" width="50"/><br>Naime Yöndem</td>
-    <td align="center">Developer</td>
-    <td align="center">
-      <a href="https://github.com/naimeyondem">
-        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20"/>
-      </a> 
-      <a href="https://linkedin.com/in/naimeyondem">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20"/>
-      </a>
-    </td>
-  </tr>
+ 
   <tr>
     <td align="center"><img src="https://github.com/receptahaydin/bootcamp-grup-23/assets/49415597/a9eb8802-083b-49ff-b858-67a2a0dc8b14" width="50"/><br>Bavul</td>
     <td align="center">Startup</td>
