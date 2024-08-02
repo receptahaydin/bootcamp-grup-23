@@ -363,13 +363,13 @@ Sprint Review Katılımcıları:
             <td colspan="4" style="text-align: center;"><h2>Kayıt Ol</h2></td>
         </tr>
         <tr>
-            <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/fbee339b-b940-4b68-999c-51079adad933" style="max-width: 100%; height: auto;"></td>
+            <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/fbee339b-b940-4b68-999c-51079adad933" style="max-width: 50%; height: auto;"></td>
         </tr>
         <tr>
             <td colspan="4" style="text-align: center;"><h2>Giriş Yap</h2></td>
         </tr>
         <tr>
-            <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/bbda4c20-a73b-450a-a980-b100ce9fea71" style="max-width: 100%; height: auto;"></td>
+            <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/bbda4c20-a73b-450a-a980-b100ce9fea71" style="max-width: 50%; height: auto;"></td>
         </tr>
     </table>
 </details>
