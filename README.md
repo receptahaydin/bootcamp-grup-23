@@ -419,4 +419,77 @@ Sprint Review Katılımcıları:
   
 ## Sprint Retrospective
 - Sprint 1 ve Sprint 2'de katılım gösteren takım üyesi Naime Yöndem ekipten ayrılma kararı almıştır. 
-- Kalan takım üyeleriyle gelecek projelerde iletişim halinde kalınması konuşulmuştur. 
+- Kalan takım üyeleriyle gelecek projelerde iletişim halinde kalınması konuşulmuştur.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renk Paleti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        .color-swatch {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Color Reference</h2>
+    <table>
+        <tr>
+            <th>Color</th>
+            <th>Hex</th>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background-color: #ea4335;"></span>Red</td>
+            <td>#ea4335</td>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background-color: #f78b82;"></span>Light Red</td>
+            <td>#f78b82</td>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background-color: #fabc04;"></span>Yellow</td>
+            <td>#fabc04</td>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background-color: #fddc77;"></span>Light Yellow</td>
+            <td>#fddc77</td>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background-color: #34a853;"></span>Green</td>
+            <td>#34a853</td>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background-color: #7fd295;"></span>Light Green</td>
+            <td>#7fd295</td>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background-color: #4285f4;"></span>Blue</td>
+            <td>#4285f4</td>
+        </tr>
+        <tr>
+            <td><span class="color-swatch" style="background-color: #a0c1f9;"></span>Light Blue</td>
+            <td>#a0c1f9</td>
+        </tr>
+    </table>
+</body>
+</html>
+
