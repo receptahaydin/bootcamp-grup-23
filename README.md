@@ -447,6 +447,7 @@ Sprint Review Katılımcıları:
             border-radius: 50%;
             display: inline-block;
             margin-right: 10px;
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -492,4 +493,5 @@ Sprint Review Katılımcıları:
     </table>
 </body>
 </html>
+
 
