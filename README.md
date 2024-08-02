@@ -116,13 +116,8 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
 - Doğa Yürüyüşü ve Kamp Yapan Bireyler
 
   <h2>Uygulama Final Video</h2>
-    <div class="video-container">
- your final video URL -->
-        <video width="100%" controls>
-            <source src="https://github.com/user-attachments/assets/a65c921f-e85e-4fb0-bb06-d3399db13c13" type="video/mp4">
-        </video>
-    </div>
-
+   https://github.com/user-attachments/assets/a65c921f-e85e-4fb0-bb06-d3399db13c13
+   
 ## Product Backlog URL
 [Bavul Trello Board](https://trello.com/invite/b/vB6Uyr6D/ATTI6561550ffa27ebcd4c1f4cde5efea2cb2A922FB1/oua-23)
 
