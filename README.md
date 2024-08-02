@@ -118,7 +118,10 @@ Bavul, seyahat severler için kullanıcı dostu bir paketleme listesi uygulamas�
   <h2>Uygulama Final Video</h2>
   
 
-https://github.com/user-attachments/assets/ea5fc069-38d7-4158-abcc-e0055572e6b5
+
+
+https://github.com/user-attachments/assets/2a23844a-ab56-4194-b331-c5c54b97aeea
+
 
 
    
