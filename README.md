@@ -360,46 +360,17 @@ Sprint Review Katılımcıları:
     <summary><h3>Sprint 3 - Ürün Ekran Görüntüleri</h3></summary>
   <table style="width: 100%;">
       <tr>
-      <td colspan="4" style="text-align: center;"><h2>Intro</h2></td>
+      <td colspan="4" style="text-align: center;"><h2>Kayıt Ol</h2></td>
+    </tr>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/fbee339b-b940-4b68-999c-51079adad933" style="max-width: 100%; height: auto;"></td>
     </tr>
     <tr>
-      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/8b420386-49ac-4711-9ea6-0cd7ad085dc3" style="max-width: 100%; height: auto;"></td>
+      <td colspan="4" style="text-align: center;"><h2>Giriş Yap</h2></td>
     </tr>
     <tr>
-      <td colspan="4" style="text-align: center;"><h2>Yeni Gezi Oluşturma - 1</h2></td>
+      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/bbda4c20-a73b-450a-a980-b100ce9fea71" style="max-width: 100%; height: auto;"></td>
     </tr>
-    <tr>
-      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/dd59f4fc-2956-4a44-a74c-ad218cd2e0a0" style="max-width: 100%; height: auto;"></td>
-    </tr>
-    <tr>
-      <td colspan="4" style="text-align: center;"><h2>Yapay Zeka Çıktıları - 1</h2></td>
-    </tr>
-    <tr>
-      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/68748daa-2fb0-424d-af5f-23faf120bdc0" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/057e7e7d-0530-4036-a928-4f2f7e8f47af" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/05806311-555e-4091-9fb9-b83f209b9968" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/1178af64-6598-44b4-a1fd-25d4dbf1f6f2" style="max-width: 100%; height: auto;"></td>
-    </tr>
-    <tr>
-      <td colspan="4" style="text-align: center;"><h2>Yeni Gezi Oluşturma - 2</h2></td>
-    </tr>
-    <tr>
-      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/ddaa2daa-5f08-4891-a3e6-069444fb694e" style="max-width: 100%; height: auto;"></td>
-    </tr>
-    <tr>
-      <td colspan="4" style="text-align: center;"><h2>Yapay Zeka Çıktıları - 2</h2></td>
-    </tr>
-    <tr>
-      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/575d2a47-ea4b-4e42-82b2-a58a302e4198" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/d9c354a1-3bf2-4b8c-b3a3-2ff898ec05c7" style="max-width: 100%; height: auto;"></td>
-      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/c06de477-9aff-4523-b44a-350cea137ab5" style="max-width: 100%; height: auto;"></td>
-    </tr>
-    <tr>
-      <td colspan="4" style="text-align: center;"><h2>Oluşturulan Geziler</h2></td>
-    </tr>
-    <tr>
-      <td style="width: 25%;"><img src="https://github.com/user-attachments/assets/8988e983-b743-471f-a3f6-791ff45611c3" style="max-width: 100%; height: auto;"></td>
-    </tr>
+    
   </table>
   </details>
 
